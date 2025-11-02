@@ -1,4 +1,3 @@
-/********** Template CSS **********/
 
 .back-to-top {
     position: fixed;
@@ -105,26 +104,82 @@
 }
 
 
-/*** Navbar ***/
+/*** Navbar / Header area ***/
+
+/* sticky behavior */
 .sticky-top {
     top: -100px;
     transition: .5s;
 }
 
+/* wrapper di belakang navbar card putih */
+.nav-wrapper-shadow {
+    background: transparent;
+    margin-top: -36px; /* dinaikkan dari -24px -> header card lebih nempel ke bar biru */
+}
+
+/* nav-card = kotak putih (logo + menu) */
+.nav-card {
+    background: #fff;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    border-radius: 0 0 .5rem .5rem;
+    flex-wrap: wrap;
+}
+
+/* bikin navbar lebih tinggi dan center isi */
+.nav-card.navbar {
+    min-height: 88px;
+    align-items: center;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+}
+
+/* logo institusi */
+.header-logo {
+    height: 64px; /* sebelumnya 52px -> sekarang lebih besar */
+    width: auto;
+    filter: drop-shadow(0 2px 2px rgba(0,0,0,0.4));
+}
+
+/* teks jurusan */
+.header-jurusan-title {
+    font-size: 0.95rem;   /* sebelumnya .8rem */
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    color: #000;
+    text-shadow: none;
+    line-height: 1.2;
+}
+
+.header-kampus-title {
+    font-size: 1.05rem;   /* sebelumnya .9rem */
+    font-weight: 700;
+    line-height: 1.2;
+    color: #000;
+    text-shadow: none;
+}
+
+/* warna link navbar */
+.navbar .navbar-nav {
+    align-items: center;  /* biar item menu rata tengah vertikal */
+    display: flex;
+}
+
 .navbar .navbar-nav .nav-link {
-    margin-right: 35px;
-    padding: 20px 0;
-    color: var(--bs-dark);
-    font-size: 18px;
+    margin-right: 24px;      /* sebelumnya 35px, lebih rapat */
+    padding: 14px 0;         /* dari 18px -> 14px supaya menu gak turun */
+    color: #1a1a1a;
+    font-size: 16px;
     font-weight: 500;
     outline: none;
 }
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color: var(--bs-primary);
+    color: #0d6efd; /* biru bootstrap vibes */
 }
 
+/* caret dropdown */
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
@@ -134,25 +189,47 @@
     margin-left: 8px;
 }
 
-@media (max-width: 991.98px) {
-    .navbar .navbar-nav .nav-link  {
-        margin-right: 0;
-        padding: 10px 0;
-    }
-
-    .navbar .navbar-nav {
-        margin-top: 15px;
-        border-top: 1px solid #EEEEEE;
-    }
+.navbar .dropdown-menu .dropdown-item {
+    font-size: 15px;
+    padding: 8px 16px;
 }
 
+/* sosmed kanan atas */
+.social-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.social-header .social-circle {
+    background: transparent;
+    border: 2px solid #1a1a1a33;
+    color: #1a1a1a;
+    width: 28px;
+    height: 28px;
+    line-height: 24px;
+    font-size: 0.8rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.social-header .social-circle:hover {
+    background: #0d6efd;
+    border-color: #0d6efd;
+    color: #fff;
+}
+
+/* tinggi sticky di desktop */
 @media (min-width: 992px) {
     .sticky-top {
         margin-top: -34px;
     }
 
     .navbar {
-        height: 68px;
+        height: auto; /* kita override default 68px, karena kita pakai min-height di .nav-card.navbar */
     }
 
     .navbar .nav-item .dropdown-menu {
@@ -173,8 +250,66 @@
     }
 }
 
+/* responsive mobile */
+@media (max-width: 991.98px) {
+    /* bar gradient biru atas disembunyiin di hp supaya gak numpuk */
+    .header-institusi {
+        display: none;
+    }
 
-/*** Header ***/
+    .nav-wrapper-shadow {
+        margin-top: 0;
+        background: #fff;
+    }
+
+    .nav-card {
+        border-radius: 0;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    }
+
+    .navbar-brand {
+        flex-direction: row !important;
+    }
+
+    .header-logo {
+        height: 44px; /* lebih kecil di hp biar gak terlalu tinggi */
+    }
+
+    .header-jurusan-title {
+        font-size: .7rem;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    .header-kampus-title {
+        font-size: .8rem;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    /* sosmed di hp disembunyikan */
+    .social-header {
+        display: none !important;
+    }
+
+    /* menu nav turun jadi kolom, kasih border tipis antar item */
+    .navbar .navbar-nav .nav-link {
+        margin-right: 0;
+        padding: 10px 0;
+        border-top: 1px solid #EEE;
+        width: 100%;
+    }
+
+    .navbar .navbar-nav {
+        margin-top: 10px;
+        border-top: 1px solid #EEEEEE;
+        align-items: flex-start;
+        display: block;
+    }
+}
+
+
+/*** Header Carousel / Hero ***/
 @media (min-width: 992px) {
     .header-carousel,
     .page-header {
@@ -237,7 +372,7 @@
 }
 
 
-/*** Features ***/
+/*** Features Section ***/
 .feature {
     background: linear-gradient(rgba(3, 27, 78, .3), rgba(3, 27, 78, .3)), url(../img/feature.jpg) left center no-repeat;
     background-size: cover;
@@ -273,7 +408,7 @@
 }
 
 
-/*** About ***/
+/*** About Section ***/
 .about-fact {
     width: 220px;
     height: 220px;
@@ -379,7 +514,7 @@
 }
 
 
-/*** Service ***/
+/*** Service Section (Fasilitas / Kapabilitas) ***/
 .container-service {
     position: relative;
 }
@@ -440,7 +575,7 @@
 }
 
 
-/*** Team ***/
+/*** Team Section ***/
 .container-team {
     position: relative;
 }
@@ -490,7 +625,7 @@
 }
 
 
-/*** Testimonial ***/
+/*** Testimonial Section ***/
 .testimonial {
     background: linear-gradient(rgba(3, 27, 78, .3), rgba(3, 27, 78, .3)), url(../img/testimonial.jpg) left center no-repeat;
     background-size: cover;
@@ -524,7 +659,7 @@
 }
 
 
-/*** Contact ***/
+/*** Contact Section ***/
 @media (min-width: 992px) {
     .contact-info::after {
         position: absolute;
@@ -606,43 +741,20 @@
     color: var(--bs-primary);
 }
 
-/* ====== Header Institusi ala JTI Polinema ====== */
+
+/*** Bar Biru Atas (header-institusi) ***/
+
 .header-institusi {
     background: linear-gradient(90deg, #003665 0%, #0d6efd 100%);
+    height: 48px; /* tipis elegan */
     border-bottom: 3px solid rgba(255,255,255,0.4);
-    /* vibes mirip JTI: biru tua -> biru muda */
+    /* drop-shadow halus ke bawah biar berasa layer */
+    box-shadow: 0 3px 8px rgba(0,0,0,0.25);
 }
 
-.header-jurusan-title {
-    font-size: 0.9rem;
-    letter-spacing: 0.03em;
-    color: #ffffff;
-    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
-}
-
-.header-kampus-title {
-    font-size: 1.1rem;
-    line-height: 1.2;
-    color: #ffffff;
-    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
-}
-
-/* Kalau mau logo gak terlalu mepet atas bawah */
-.header-institusi img {
-    filter: drop-shadow(0 2px 2px rgba(0,0,0,0.5));
-}
-
-/* Responsive tweak biar teks tetap enak kalau layar laptop 1366 */
-@media (max-width: 1400px) {
-    .header-jurusan-title {
-        font-size: 0.8rem;
-    }
-    .header-kampus-title {
-        font-size: 1rem;
-    }
-}
-
-/* topbar abu-abu biru tipis di paling atas */
+/* (Top bar kecil biru tua kalau mau someday nambah kontak atau SOP link)
+   .topbar-lite itu masih disimpan buat future use, tapi belum dipakai di HTML sekarang.
+*/
 .topbar-lite {
     background: #0f1f3a;
     font-size: 0.8rem;
@@ -650,103 +762,244 @@
     border-bottom: 1px solid rgba(255,255,255,0.15);
 }
 
-/* bar gradient biru (dibelakang kartu putih) */
-.header-institusi {
-    background: linear-gradient(90deg, #003665 0%, #0d6efd 100%);
-    height: 48px; /* cukup tipis */
-    border-bottom: 3px solid rgba(255,255,255,0.4);
+/* ===========================
+   ABOUT / PROFIL LAB SECTION
+   =========================== */
+
+.about-section {
+    background-color: #ffffff;
 }
 
-/* kartu putih yang nempel di bawah header-institusi */
-.nav-wrapper-shadow {
-    background: transparent;
-    margin-top: -24px; /* naikkan card putih sedikit menindih bar biru */
+/* --- KIRI (foto kolase + card publikasi) --- */
+
+.about-left-wrapper {
+    position: relative;
+    max-width: 520px;
 }
 
-/* kotak putih nav (logo + menu) */
-.nav-card {
-    background: #fff;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-    border-radius: 0 0 .5rem .5rem;
-    flex-wrap: wrap;
+.about-photo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
 }
 
-/* logo header */
-.header-logo {
-    height: 52px;
-    width: auto;
-    filter: drop-shadow(0 2px 2px rgba(0,0,0,0.4));
+.about-photo {
+    width: 100%;
+    height: 140px;
+    background-color: #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
-/* teks jurusan */
-.header-jurusan-title {
-    font-size: .8rem;
-    letter-spacing: 0.03em;
-    color: #000;
-    text-shadow: none;
-}
-.header-kampus-title {
-    font-size: .9rem;
-    line-height: 1.2;
-    color: #000;
-    text-shadow: none;
+.about-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-/* warna link navbar default lebih gelap (bukan abu-abu terang klinik) */
-.navbar .navbar-nav .nav-link {
-    color: #1a1a1a;
+/* Kartu publikasi tahunan */
+.about-stats-card {
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+    background-color: #2f58b8; /* biru Polinema-ish */
+    color: #fff;
+    border-radius: 6px;
+    padding: 20px 24px;
+    min-width: 220px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+.about-stats-icon {
+    font-size: 28px;
+    line-height: 1;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.about-stats-number {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 4px;
+    color: #fff;
+    font-family: "Red Rose", "Roboto", sans-serif;
+}
+
+.about-stats-label {
     font-size: 16px;
     font-weight: 500;
-    padding: 18px 0;
-    margin-right: 24px;
-}
-.navbar .navbar-nav .nav-link:hover,
-.navbar .navbar-nav .nav-link.active {
-    color: #0d6efd;
+    color: #fff;
 }
 
-/* dropdown caret masih pakai Font Awesome -> aman */
-.navbar .dropdown-menu .dropdown-item {
-    font-size: 15px;
-    padding: 8px 16px;
+/* biar bawahnya gak ketabrak sama card */
+@media (min-width: 992px) {
+    .about-left-wrapper {
+        padding-bottom: 80px;
+    }
 }
-
-
-/* responsive tweaks */
 @media (max-width: 991.98px) {
-    .header-institusi {
-        display: none; /* hp: jangan numpuk */
+    .about-left-wrapper {
+        padding-bottom: 100px;
+        margin-left: auto;
+        margin-right: auto;
     }
-    .nav-wrapper-shadow {
-        margin-top: 0;
-        background: #fff;
+    .about-stats-card {
+        bottom: -40px;
     }
-    .nav-card {
-        border-radius: 0;
-        box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    .about-photo {
+        height: 120px;
     }
-    .navbar-brand {
-        flex-direction: row !important;
+}
+
+/* ===================================
+   ABOUT / PROFIL LAB
+   =================================== */
+
+.about-section {
+    background-color: #ffffff;
+}
+
+
+.about-left-wrapper {
+    position: relative;
+    max-width: 520px;
+}
+
+
+.about-left-wrapper.no-stats-card {
+    padding-bottom: 0;
+}
+
+.about-photo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px; 
+}
+
+
+.about-photo {
+    width: 100%;
+    height: 250px; 
+    background-color: #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+}
+
+.about-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* mobile tweak */
+@media (max-width: 575.98px) {
+    .about-photo {
+        height: 140px;
     }
-    .header-logo {
-        height: 44px;
-    }
-    .header-jurusan-title {
-        font-size: .7rem;
-    }
-    .header-kampus-title {
-        font-size: .8rem;
+}
+
+/* --- KANAN (judul + deskripsi + bubble) --- */
+
+.about-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0b1a3a;
+    line-height: 1.2;
+    font-family: "Red Rose","Roboto",sans-serif;
+}
+
+.about-desc {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #5b6175;
+    max-width: 680px;
+    margin-bottom: 2rem;
+}
+
+.about-bubbles {
+    margin-bottom: 1rem;
+}
+
+/* bubble individual */
+.about-bubble {
+    border-radius: 50%;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.12);
+    color: #fff;
+    text-align: center;
+    width: 180px;
+    height: 180px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+}
+
+.bubble-label {
+    font-size: 0.95rem;
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: 8px;
+    text-align: center;
+    color: #fff;
+}
+
+.bubble-number {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+}
+
+
+.bubble-blue {
+    background-color: #2f58b8; 
+}
+
+.bubble-dark {
+    background-color: #001037; 
+}
+
+.bubble-gray {
+    background-color: #7a8099; 
+}
+
+.bubble-fixed {
+    min-width: 180px;
+    min-height: 180px;
+}
+
+@media (max-width: 575.98px) {
+    .about-bubble {
+        width: 160px;
+        height: 160px;
+        min-width: 160px;
+        min-height: 160px;
+        padding: 16px;
     }
 
-    /* sosmed di hp: kita sembunyikan versi kanan atas */
-    .social-header {
-        display: none !important;
+    .bubble-number {
+        font-size: 1.8rem;
     }
+}
 
-    /* menu nav di collapse turun jadi kolom */
-    .navbar .navbar-nav .nav-link  {
-        margin-right: 0;
-        padding: 10px 0;
-        border-top: 1px solid #EEE;
-    }
+/* CTA button tetap */
+.about-cta-btn {
+    background-color: #2f58b8;
+    border-color: #2f58b8;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.about-cta-btn:hover {
+    background-color: #001037;
+    border-color: #001037;
 }
