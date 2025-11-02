@@ -41,114 +41,86 @@
     <!-- Spinner End -->
 
 
-    <!-- Topbar Start -->
-    <div class="container-fluid py-2 d-none d-lg-flex">
-        <div class="container">
-            <div class="d-flex justify-content-between">
-                <div>
-                    <small class="me-3"><i class="fa fa-map-marker-alt me-2"></i>Gedung JTI, Politeknik Negeri Malang</small>
-                    <small class="me-3"><i class="fa fa-clock me-2"></i>Senin–Jumat 08.00–16.00</small>
+<!-- Header Institusi (bar biru gradasi) -->
+<div class="header-institusi d-none d-lg-block"></div>
+
+<!-- Navbar Start -->
+<div class="container-fluid sticky-top nav-wrapper-shadow">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-white py-lg-0 px-lg-3 rounded-bottom nav-card">
+            <!-- Kiri: Logo + teks jurusan -->
+            <a href="index.html" class="navbar-brand d-flex align-items-start flex-lg-row flex-column me-4">
+                <div class="d-flex align-items-start">
+                    <img src="img/logo-polinema.jpg" alt="Polinema Logo"
+                         class="me-3 header-logo">
+                    <div class="lh-sm">
+                        <div class="fw-bold text-uppercase header-jurusan-title text-dark mb-1">
+                            JURUSAN TEKNOLOGI INFORMASI
+                        </div>
+                        <div class="fw-bold text-uppercase header-kampus-title text-dark">
+                            POLITEKNIK NEGERI MALANG
+                        </div>
+                    </div>
                 </div>
-                <nav class="breadcrumb mb-0">
-                    <a class="breadcrumb-item small text-body" href="#">Instagram</a>
-                    <a class="breadcrumb-item small text-body" href="#">YouTube</a>
-                    <a class="breadcrumb-item small text-body" href="#">LinkedIn</a>
-                    <a class="breadcrumb-item small text-body" href="#">Dokumen SOP</a>
-                </nav>
+            </a>
+
+            <!-- Mobile burger -->
+            <button type="button" class="navbar-toggler ms-auto" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-lg-0">
+                    <a href="index.html" class="nav-item nav-link active">Beranda</a>
+
+                    <div class="nav-item dropdown">
+                        <a href="profil.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Profil Lab</a>
+                        <div class="dropdown-menu bg-light m-0">
+                            <a href="profil.html#visi-misi" class="dropdown-item">Visi & Misi</a>
+                            <a href="profil.html#sejarah" class="dropdown-item">Sejarah</a>
+                            <a href="profil.html#struktur" class="dropdown-item">Struktur Organisasi</a>
+                            <a href="profil.html#anggota" class="dropdown-item">Staf & Mahasiswa</a>
+                        </div>
+                    </div>
+
+                    <a href="fasilitas.html" class="nav-item nav-link">Fasilitas</a>
+
+                    <div class="nav-item dropdown">
+                        <a href="publikasi.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Riset & Publikasi</a>
+                        <div class="dropdown-menu bg-light m-0">
+                            <a href="publikasi.html#penelitian" class="dropdown-item">Daftar Penelitian</a>
+                            <a href="publikasi.html#jurnal" class="dropdown-item">Publikasi Ilmiah & Jurnal</a>
+                            <a href="publikasi.html#hki" class="dropdown-item">HKI / Paten</a>
+                        </div>
+                    </div>
+
+                    <div class="nav-item dropdown">
+                        <a href="berita.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Berita & Agenda</a>
+                        <div class="dropdown-menu bg-light m-0">
+                            <a href="berita.html#agenda" class="dropdown-item">Agenda Kegiatan</a>
+                            <a href="berita.html#pengumuman" class="dropdown-item">Pengumuman</a>
+                            <a href="berita.html#highlight" class="dropdown-item">Kegiatan Terbaru</a>
+                        </div>
+                    </div>
+
+                    <a href="galeri.html" class="nav-item nav-link">Galeri</a>
+                    <a href="kontak.html" class="nav-item nav-link">Kontak & Kerja Sama</a>
+                </div>
+
+                <!-- Sosmed bulat di kanan (desktop) -->
+                <div class="ms-auto d-none d-lg-flex align-items-center gap-2 social-header">
+                    <a class="btn btn-sm-square ms-2 rounded-circle social-circle" href=""><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-sm-square ms-2 rounded-circle social-circle" href=""><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-sm-square ms-2 rounded-circle social-circle" href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
             </div>
-        </div>
+        </nav>
     </div>
-    <!-- Topbar End -->
+</div>
+<!-- Navbar End -->
 
-
-    <!-- Brand Start -->
-    <div class="container-fluid bg-primary text-white pt-4 pb-5 d-none d-lg-flex">
-        <div class="container pb-2">
-            <div class="d-flex align-items-center justify-content-between">
-                <div class="d-flex">
-                    <i class="bi bi-telephone-inbound fs-2"></i>
-                    <div class="ms-3">
-                        <h5 class="text-white mb-0">Kontak Lab</h5>
-                        <span>+62 812-0000-0000</span>
-                    </div>
-                </div>
-                <a href="index.html" class="h1 text-white mb-0">
-                    Laboratorium <span class="text-dark">Informatika Terapan</span>
-                </a>
-                <div class="d-flex">
-                    <i class="bi bi-envelope fs-2"></i>
-                    <div class="ms-3">
-                        <h5 class="text-white mb-0">Email</h5>
-                        <span>lab.informatika@polinema.ac.id</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Brand End -->
-
-
-    <!-- Navbar Start -->
-    <div class="container-fluid sticky-top">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-lg-0 px-lg-3">
-                <a href="index.html" class="navbar-brand d-lg-none">
-                    <h1 class="text-primary m-0">Lab<span class="text-dark">Informatika</span></h1>
-                </a>
-                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
-                    data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-
-                    <div class="navbar-nav">
-                        <a href="index.html" class="nav-item nav-link active">Beranda</a>
-
-                        <div class="nav-item dropdown">
-                            <a href="profil.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Profil Lab</a>
-                            <div class="dropdown-menu bg-light m-0">
-                                <a href="profil.html#visi-misi" class="dropdown-item">Visi & Misi</a>
-                                <a href="profil.html#sejarah" class="dropdown-item">Sejarah</a>
-                                <a href="profil.html#struktur" class="dropdown-item">Struktur Organisasi</a>
-                                <a href="profil.html#anggota" class="dropdown-item">Staf & Mahasiswa</a>
-                            </div>
-                        </div>
-
-                        <a href="fasilitas.html" class="nav-item nav-link">Fasilitas</a>
-
-                        <div class="nav-item dropdown">
-                            <a href="publikasi.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Riset & Publikasi</a>
-                            <div class="dropdown-menu bg-light m-0">
-                                <a href="publikasi.html#penelitian" class="dropdown-item">Daftar Penelitian</a>
-                                <a href="publikasi.html#jurnal" class="dropdown-item">Publikasi Ilmiah & Jurnal</a>
-                                <a href="publikasi.html#hki" class="dropdown-item">HKI / Paten</a>
-                            </div>
-                        </div>
-
-                        <div class="nav-item dropdown">
-                            <a href="berita.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Berita & Agenda</a>
-                            <div class="dropdown-menu bg-light m-0">
-                                <a href="berita.html#agenda" class="dropdown-item">Agenda Kegiatan</a>
-                                <a href="berita.html#pengumuman" class="dropdown-item">Pengumuman</a>
-                                <a href="berita.html#highlight" class="dropdown-item">Kegiatan Terbaru</a>
-                            </div>
-                        </div>
-
-                        <a href="galeri.html" class="nav-item nav-link">Galeri</a>
-
-                        <a href="kontak.html" class="nav-item nav-link">Kontak & Kerja Sama</a>
-                    </div>
-
-                    <div class="ms-auto d-none d-lg-flex">
-                        <a class="btn btn-sm-square btn-primary ms-2" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-sm-square btn-primary ms-2" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-sm-square btn-primary ms-2" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </div>
-    <!-- Navbar End -->
 
 
     <!-- Carousel / Hero Start -->

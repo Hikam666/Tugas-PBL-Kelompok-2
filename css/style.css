@@ -605,3 +605,148 @@
 .copyright a:hover {
     color: var(--bs-primary);
 }
+
+/* ====== Header Institusi ala JTI Polinema ====== */
+.header-institusi {
+    background: linear-gradient(90deg, #003665 0%, #0d6efd 100%);
+    border-bottom: 3px solid rgba(255,255,255,0.4);
+    /* vibes mirip JTI: biru tua -> biru muda */
+}
+
+.header-jurusan-title {
+    font-size: 0.9rem;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+}
+
+.header-kampus-title {
+    font-size: 1.1rem;
+    line-height: 1.2;
+    color: #ffffff;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+}
+
+/* Kalau mau logo gak terlalu mepet atas bawah */
+.header-institusi img {
+    filter: drop-shadow(0 2px 2px rgba(0,0,0,0.5));
+}
+
+/* Responsive tweak biar teks tetap enak kalau layar laptop 1366 */
+@media (max-width: 1400px) {
+    .header-jurusan-title {
+        font-size: 0.8rem;
+    }
+    .header-kampus-title {
+        font-size: 1rem;
+    }
+}
+
+/* topbar abu-abu biru tipis di paling atas */
+.topbar-lite {
+    background: #0f1f3a;
+    font-size: 0.8rem;
+    line-height: 1.2;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+/* bar gradient biru (dibelakang kartu putih) */
+.header-institusi {
+    background: linear-gradient(90deg, #003665 0%, #0d6efd 100%);
+    height: 48px; /* cukup tipis */
+    border-bottom: 3px solid rgba(255,255,255,0.4);
+}
+
+/* kartu putih yang nempel di bawah header-institusi */
+.nav-wrapper-shadow {
+    background: transparent;
+    margin-top: -24px; /* naikkan card putih sedikit menindih bar biru */
+}
+
+/* kotak putih nav (logo + menu) */
+.nav-card {
+    background: #fff;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    border-radius: 0 0 .5rem .5rem;
+    flex-wrap: wrap;
+}
+
+/* logo header */
+.header-logo {
+    height: 52px;
+    width: auto;
+    filter: drop-shadow(0 2px 2px rgba(0,0,0,0.4));
+}
+
+/* teks jurusan */
+.header-jurusan-title {
+    font-size: .8rem;
+    letter-spacing: 0.03em;
+    color: #000;
+    text-shadow: none;
+}
+.header-kampus-title {
+    font-size: .9rem;
+    line-height: 1.2;
+    color: #000;
+    text-shadow: none;
+}
+
+/* warna link navbar default lebih gelap (bukan abu-abu terang klinik) */
+.navbar .navbar-nav .nav-link {
+    color: #1a1a1a;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 18px 0;
+    margin-right: 24px;
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: #0d6efd;
+}
+
+/* dropdown caret masih pakai Font Awesome -> aman */
+.navbar .dropdown-menu .dropdown-item {
+    font-size: 15px;
+    padding: 8px 16px;
+}
+
+
+/* responsive tweaks */
+@media (max-width: 991.98px) {
+    .header-institusi {
+        display: none; /* hp: jangan numpuk */
+    }
+    .nav-wrapper-shadow {
+        margin-top: 0;
+        background: #fff;
+    }
+    .nav-card {
+        border-radius: 0;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    }
+    .navbar-brand {
+        flex-direction: row !important;
+    }
+    .header-logo {
+        height: 44px;
+    }
+    .header-jurusan-title {
+        font-size: .7rem;
+    }
+    .header-kampus-title {
+        font-size: .8rem;
+    }
+
+    /* sosmed di hp: kita sembunyikan versi kanan atas */
+    .social-header {
+        display: none !important;
+    }
+
+    /* menu nav di collapse turun jadi kolom */
+    .navbar .navbar-nav .nav-link  {
+        margin-right: 0;
+        padding: 10px 0;
+        border-top: 1px solid #EEE;
+    }
+}
