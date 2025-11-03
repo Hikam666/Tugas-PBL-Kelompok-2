@@ -374,7 +374,7 @@
 
 /*** Features Section ***/
 .feature {
-    background: linear-gradient(rgba(3, 27, 78, .3), rgba(3, 27, 78, .3)), url(../img/feature.jpg) left center no-repeat;
+    background: linear-gradient(rgba(3, 27, 78, .3), rgba(3, 27, 78, .3)), url(../img/feature1.jpg) left center no-repeat;
     background-size: cover;
 }
 
