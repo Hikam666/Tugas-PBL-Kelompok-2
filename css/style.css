@@ -202,7 +202,7 @@
     background: #fff;
     box-shadow: 0 8px 24px rgba(0,0,0,0.12);
     border-radius: 25px 25px 25px 25px; /* ATAU cukup: border-radius: 25px; */
-    min-height: 88px;
+    min-height: 120px;
     align-items: center;
     padding-top: 12px !important;
     padding-bottom: 12px !important;
