@@ -112,6 +112,77 @@
     transition: .5s;
 }
 
+/* ============================================
+   LOGO LAB DI HEADER
+   ============================================ */
+/* Logo Lab Teknologi di pojok kanan atas navbar */
+.logo.lab.header {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    height: 40px;
+}
+
+.logo-kanan img {
+    height: 60px;
+    width: 60px;
+    border-radius: 10;
+    object-fit: cover;
+}
+
+/* Garis pemisah antara text dan logo lab */
+.garis-pemisah {
+    width: 2px;                    /* lebar garis */
+    height: 55px;                  /* tinggi garis */
+    background: #dee2e6;           /* warna abu-abu */
+    margin-left: 25px;             /* jarak dari kiri */
+    margin-right: 25px;            /* jarak dari kanan */
+}
+
+/* Logo lab bentuk persegi panjang (landscape) */
+.logo-lab {
+    height: 45px;                  /* tinggi logo */
+    width: auto;                   /* lebar otomatis sesuai proporsi */
+    max-width: 180px;              /* batas maksimal lebar */
+}
+
+/* Efek saat mouse hover di logo */
+.logo-lab:hover {
+    opacity: 0.8;                  /* sedikit transparan */
+    transition: 0.3s;              /* animasi halus */
+}
+
+/* Sembunyikan di tablet dan HP */
+@media (max-width: 991px) {
+    .logo-lab,
+    .garis-pemisah {
+        display: none !important;
+    }
+}
+
+/* Untuk layar laptop kecil (992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .logo-lab {
+        height: 40px;              /* logo lebih kecil */
+        max-width: 150px;
+    }
+    
+    .garis-pemisah {
+        margin-left: 15px;         /* jarak lebih sempit */
+        margin-right: 15px;
+    }
+}
+
+/* Untuk layar monitor besar (1400px ke atas) */
+@media (min-width: 1400px) {
+    .logo-lab {
+        height: 50px;              /* logo lebih besar */
+        max-width: 200px;
+    }
+}
+
+
+
 /* wrapper di belakang navbar card putih */
 .nav-wrapper-shadow {
     background: transparent;
@@ -122,12 +193,15 @@
 .nav-card {
     background: #fff;
     box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-    border-radius: 0 0 .5rem .5rem;
+    border-radius: 20px; /* Coba ini dulu */
     flex-wrap: wrap;
 }
 
 /* bikin navbar lebih tinggi dan center isi */
-.nav-card.navbar {
+.nav-card {
+    background: #fff;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    border-radius: 25px 25px 25px 25px; /* ATAU cukup: border-radius: 25px; */
     min-height: 88px;
     align-items: center;
     padding-top: 12px !important;
@@ -1003,3 +1077,5 @@
     background-color: #001037;
     border-color: #001037;
 }
+
+
