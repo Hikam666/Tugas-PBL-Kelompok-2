@@ -42,17 +42,17 @@
 
 
 <!-- Header Institusi (bar biru gradasi) -->
-<div class="header-institusi d-none d-lg-block"></div>
+<div class="navbar-top-bar d-none d-lg-block"></div>
 
 <!-- Navbar Start -->
-<div class="container-fluid sticky-top nav-wrapper-shadow">
+<div class="container-fluid sticky-top navbar-container-wrapper">
     <div class="container">
-        <nav class="navbar navbar-expand-lg bg-white py-lg-0 px-lg-3 rounded-bottom nav-card">
+        <nav class="navbar navbar-expand-lg bg-white py-lg-0 px-lg-3 rounded-bottom navbar-card-white">
             <!-- Kiri: Logo + teks jurusan -->
             <a href="index.html" class="navbar-brand d-flex align-items-start flex-lg-row flex-column me-4">
                 <div class="d-flex align-items-start">
                     <img src="img/logo-polinema.jpg" alt="Polinema Logo"
-                         class="me-3 header-logo">
+                         class="me-3 navbar-logo-polinema">
                     <div class="lh-sm">
                        <div class="judul-tengah text-center">
                             <h5 class="m-0 text-primary" style="font-weight: 700; line-height: 1.2;">
@@ -65,7 +65,7 @@
                     </div>
                     
                     <!-- Logo Lab -->
-                    <img src="img/logoLab.png" alt="Lab Teknologi Data" class="logo lab header">
+                    <img src="img/logoLab.png" alt="Lab Teknologi Data" class="navbar-logo-lab">
                     
                 </div>
             </a>
@@ -86,8 +86,7 @@
                         <div class="dropdown-menu bg-light m-0">
                             <a href="profil.html#visi-misi" class="dropdown-item">Visi & Misi</a>
                             <a href="profil.html#sejarah" class="dropdown-item">Sejarah</a>
-                            <a href="profil.html#struktur" class="dropdown-item">Struktur Organisasi</a>
-                            <a href="profil.html#anggota" class="dropdown-item">Staf & Mahasiswa</a>
+                            <a href="profil.html#anggota" class="dropdown-item">Anggota Tim</a>
                         </div>
                     </div>
 
@@ -114,13 +113,6 @@
                     <a href="galeri.html" class="nav-item nav-link">Galeri</a>
                     <a href="kontak.html" class="nav-item nav-link">Kontak & Kerja Sama</a>
                 </div>
-
-                <!-- Sosmed bulat di kanan (desktop) -->
-                <div class="ms-auto d-none d-lg-flex align-items-center gap-2 social-header">
-                    <a class="btn btn-sm-square ms-2 rounded-circle social-circle" href=""><i class="fab fa-instagram"></i></a>
-                    <a class="btn btn-sm-square ms-2 rounded-circle social-circle" href=""><i class="fab fa-youtube"></i></a>
-                    <a class="btn btn-sm-square ms-2 rounded-circle social-circle" href=""><i class="fab fa-linkedin-in"></i></a>
-                </div>
             </div>
         </nav>
     </div>
@@ -130,7 +122,7 @@
 
 
     <!-- Carousel / Hero Start -->
-    <div class="container-fluid header-carousel px-0 mb-5">
+    <div class="container-fluid hero-carousel-main px-0 mb-5">
         <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
 
@@ -189,24 +181,24 @@
 
 
 <!-- About (Profil singkat) Start -->
-<div class="container-fluid py-5 about-section">
+<div class="container-fluid py-5 section-profile-lab">
     <div class="container">
         <div class="row g-5 align-items-start">
 
             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                <div class="about-left-wrapper no-stats-card">
+                <div class="profile-photos-wrapper no-stats-card">
                     <!-- Grid foto 2x2 -->
-                    <div class="about-photo-grid">
-                        <div class="about-photo">
+                    <div class="profile-photos-grid">
+                        <div class="profile-photo-item">
                             <img src="img/about-1.jpg" alt="foto lab 1">
                         </div>
-                        <div class="about-photo">
+                        <div class="profile-photo-item">
                             <img src="img/about-2.jpg" alt="foto lab 2">
                         </div>
-                        <div class="about-photo">
+                        <div class="profile-photo-item">
                             <img src="img/about-3.jpg" alt="foto lab 3">
                         </div>
-                        <div class="about-photo">
+                        <div class="profile-photo-item">
                             <img src="img/about-4.jpg" alt="foto lab 4">
                         </div>
                     </div>
@@ -215,9 +207,9 @@
 
             <!-- Kolom kanan: profil + bubbles -->
             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                <h2 class="about-title mb-3">Profil Laboratorium</h2>
+                <h2 class="profile-section-title mb-3">Profil Laboratorium</h2>
 
-                <p class="about-desc mb-4">
+                <p class="profile-section-description mb-4">
                     Unit penunjang akademik di Jurusan Teknologi Informasi yang berfokus pada kegiatan
                     pembelajaran, penelitian, serta pengembangan keilmuan di bidang teknologi berbasis data.
                     Laboratorium ini menyediakan fasilitas praktikum dan riset yang mendukung penguasaan
@@ -227,33 +219,26 @@
                 </p>
 
                 <!-- Bubble statistik (3 item rata horizontal) -->
-                <div class="about-bubbles row gx-4 gy-4">
+                <div class="profile-statistics-bubbles row gx-4 gy-4">
 
                     <div class="col-12 col-md-4 d-flex justify-content-center">
-                        <div class="about-bubble bubble-blue bubble-fixed">
-                            <div class="bubble-label">Anggota Peneliti</div>
-                            <div class="bubble-number">6</div>
+                        <div class="profile-statistic-bubble bubble-color-blue bubble-size-fixed">
+                            <div class="profile-bubble-label">Anggota Peneliti</div>
+                            <div class="profile-bubble-number">6</div>
                         </div>
                     </div>
 
                     <div class="col-12 col-md-4 d-flex justify-content-center">
-                        <div class="about-bubble bubble-dark bubble-fixed">
-                            <div class="bubble-label">Kepala Lab</div>
-                            <div class="bubble-number">1</div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-4 d-flex justify-content-center">
-                        <div class="about-bubble bubble-gray bubble-fixed">
-                            <div class="bubble-label">Proyek Riset</div>
-                            <div class="bubble-number">14</div>
+                        <div class="profile-statistic-bubble bubble-color-gray bubble-size-fixed">
+                            <div class="profile-bubble-label">Proyek Riset</div>
+                            <div class="profile-bubble-number">14</div>
                         </div>
                     </div>
 
                 </div>
 
                 <!-- CTA -->
-                <a class="btn btn-primary py-3 px-5 about-cta-btn mt-4" href="profil.html">
+                <a class="btn btn-primary py-3 px-5 profile-button-cta mt-4" href="profil.html">
                     Lihat Visi, Misi & Struktur »
                 </a>
             </div>
@@ -277,7 +262,7 @@
 
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item">
+                    <div class="facility-card-item">
                         <div class="icon-box-primary mb-4">
                             <i class="bi bi-hdd-network text-dark"></i>
                         </div>
@@ -287,7 +272,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item">
+                    <div class="facility-card-item">
                         <div class="icon-box-primary mb-4">
                             <i class="bi bi-gpu-card text-dark"></i>
                         </div>
@@ -297,7 +282,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item">
+                    <div class="facility-card-item">
                         <div class="icon-box-primary mb-4">
                             <i class="bi bi-diagram-3 text-dark"></i>
                         </div>
@@ -307,7 +292,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="service-item">
+                    <div class="facility-card-item">
                         <div class="icon-box-primary mb-4">
                             <i class="bi bi-people text-dark"></i>
                         </div>
@@ -333,7 +318,7 @@
 
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item">
+                    <div class="facility-card-item">
                         <div class="icon-box-primary mb-4">
                             <i class="bi bi-hdd-network text-dark"></i>
                         </div>
@@ -343,7 +328,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item">
+                    <div class="facility-card-item">
                         <div class="icon-box-primary mb-4">
                             <i class="bi bi-gpu-card text-dark"></i>
                         </div>
@@ -353,7 +338,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item">
+                    <div class="facility-card-item">
                         <div class="icon-box-primary mb-4">
                             <i class="bi bi-diagram-3 text-dark"></i>
                         </div>
@@ -363,7 +348,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="service-item">
+                    <div class="facility-card-item">
                         <div class="icon-box-primary mb-4">
                             <i class="bi bi-people text-dark"></i>
                         </div>
@@ -390,7 +375,7 @@
 
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item">
+                    <div class="facility-card-item">
                         <div class="icon-box-primary mb-4">
                             <i class="bi bi-hdd-network text-dark"></i>
                         </div>
@@ -400,7 +385,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item">
+                    <div class="facility-card-item">
                         <div class="icon-box-primary mb-4">
                             <i class="bi bi-gpu-card text-dark"></i>
                         </div>
@@ -410,7 +395,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item">
+                    <div class="facility-card-item">
                         <div class="icon-box-primary mb-4">
                             <i class="bi bi-diagram-3 text-dark"></i>
                         </div>
@@ -420,7 +405,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="service-item">
+                    <div class="facility-card-item">
                         <div class="icon-box-primary mb-4">
                             <i class="bi bi-people text-dark"></i>
                         </div>
@@ -437,7 +422,7 @@
 
 
     <!-- Riset & Publikasi / highlight -->
-    <div class="container-fluid feature mt-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container-fluid section-research-publications mt-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
             <div class="row g-0">
                 <div class="col-lg-6 pt-lg-5">
@@ -482,7 +467,7 @@
                         </div>
                         <div class="col-12">
                             <div class="bg-primary p-5">
-                                <div class="experience mb-4 wow fadeIn" data-wow-delay="0.3s">
+                                <div class="research-statistics-progress mb-4 wow fadeIn" data-wow-delay="0.3s">
                                     <div class="d-flex justify-content-between mb-2">
                                         <span class="text-white">Publikasi Terindeks</span>
                                         <span class="text-white">90%</span>
@@ -491,7 +476,7 @@
                                         <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
-                                <div class="experience mb-4 wow fadeIn" data-wow-delay="0.4s">
+                                <div class="research-statistics-progress mb-4 wow fadeIn" data-wow-delay="0.4s">
                                     <div class="d-flex justify-content-between mb-2">
                                         <span class="text-white">Kolaborasi Industri</span>
                                         <span class="text-white">75%</span>
@@ -500,7 +485,7 @@
                                         <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
-                                <div class="experience mb-0 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="research-statistics-progress mb-0 wow fadeIn" data-wow-delay="0.5s">
                                     <div class="d-flex justify-content-between mb-2">
                                         <span class="text-white">Proyek Mahasiswa Aktif</span>
                                         <span class="text-white">60%</span>
@@ -599,7 +584,7 @@
 
 
     <!-- Footer Start -->
-    <div class="container-fluid footer position-relative bg-dark text-white-50 py-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid footer-main-section position-relative bg-dark text-white-50 py-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container">
             <div class="row g-5 py-5">
 
@@ -640,24 +625,10 @@
 
                         <div class="col-sm-6">
                             <h4 class="text-light mb-4">Dokumentasi</h4>
-                            <a class="btn btn-link" href="#">Struktur Organisasi</a>
                             <a class="btn btn-link" href="#">SOP Penggunaan Lab</a>
                             <a class="btn btn-link" href="#">Form Peminjaman Fasilitas</a>
                             <a class="btn btn-link" href="#">HKI & Paten</a>
                         </div>
-
-                        <div class="col-sm-12">
-                            <h4 class="text-light mb-4">Update Kegiatan</h4>
-                            <div class="w-100">
-                                <div class="input-group">
-                                    <input type="text" class="form-control border-0 py-3 px-4"
-                                        style="background: rgba(255, 255, 255, .1);"
-                                        placeholder="Email untuk update kegiatan lab">
-                                    <button class="btn btn-primary px-4">Daftar</button>
-                                </div>
-                            </div>
-                        </div>
-
                     </div> <!-- row -->
                 </div> <!-- col-lg-6 -->
 
@@ -668,7 +639,7 @@
 
 
     <!-- Copyright Start -->
-    <div class="container-fluid copyright bg-dark text-white-50 py-4">
+    <div class="container-fluid footer-copyright-bar bg-dark text-white-50 py-4">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start">
