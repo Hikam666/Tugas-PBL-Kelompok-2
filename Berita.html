@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <title>Berita & Agenda - Laboratorium Teknologi Data JTI Polinema</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="berita laboratorium, agenda kegiatan, pengumuman" name="keywords">
+    <meta content="Berita terkini, agenda kegiatan, dan pengumuman Laboratorium Teknologi Data" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Red+Rose:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    <!-- News Page Stylesheet -->
+    <link href="css/StyleBerita.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Header Institusi (bar biru gradasi) -->
+    <div class="navbar-top-bar d-none d-lg-block"></div>
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top navbar-container-wrapper">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-white py-lg-0 px-lg-3 rounded-bottom navbar-card-white">
+                <!-- Kiri: Logo + teks jurusan -->
+                <a href="index.html" class="navbar-brand d-flex align-items-start flex-lg-row flex-column me-4">
+                    <div class="d-flex align-items-start">
+                        <img src="img/logo-polinema.jpg" alt="Polinema Logo" class="me-3 navbar-logo-polinema">
+                        <div class="lh-sm">
+                           <div class="judul-tengah text-center">
+                                <h5 class="m-0 text-primary" style="font-weight: 700; line-height: 1.2;">
+                                  JURUSAN TEKNOLOGI INFORMASI
+                                </h5>
+                                <h6 class="m-0" style="font-weight: 600; color: #333;">
+                                  POLITEKNIK NEGERI MALANG
+                                </h6>
+                            </div>
+                        </div>
+                        
+                        <!-- Logo Lab -->
+                        <img src="img/logoLab.png" alt="Lab Teknologi Data" class="navbar-logo-lab">
+                    </div>
+                </a>
+
+                <!-- Mobile burger -->
+                <button type="button" class="navbar-toggler ms-auto" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu -->
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-lg-0">
+                        <a href="index.html" class="nav-item nav-link">Beranda</a>
+
+                        <div class="nav-item dropdown">
+                            <a href="profil.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Profil Lab</a>
+                            <div class="dropdown-menu bg-light m-0">
+                                <a href="profil.html#visi-misi" class="dropdown-item">Visi & Misi</a>
+                                <a href="profil.html#sejarah" class="dropdown-item">Sejarah</a>
+                                <a href="profil.html#struktur" class="dropdown-item">Struktur Organisasi</a>
+                                <a href="profil.html#anggota" class="dropdown-item">Staf & Mahasiswa</a>
+                            </div>
+                        </div>
+
+                        <a href="fasilitas.html" class="nav-item nav-link">Fasilitas</a>
+
+                        <div class="nav-item dropdown">
+                            <a href="publikasi.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Riset & Publikasi</a>
+                            <div class="dropdown-menu bg-light m-0">
+                                <a href="publikasi.html#penelitian" class="dropdown-item">Daftar Penelitian</a>
+                                <a href="publikasi.html#jurnal" class="dropdown-item">Publikasi Ilmiah & Jurnal</a>
+                                <a href="publikasi.html#hki" class="dropdown-item">HKI / Paten</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item dropdown">
+                            <a href="berita.html" class="nav-item nav-link" data-bs-toggle="dropdown">Berita & Agenda</a>
+                        </div>
+
+                        <a href="galeri.html" class="nav-item nav-link">Galeri</a>
+                        <a href="kontak.html" class="nav-item nav-link">Kontak & Kerja Sama</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header-banner py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-5">
+            <h1 class="display-3 text-white mb-4 animated slideInDown">Berita & Agenda</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Berita & Agenda</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- Filter Section Start -->
+    <div class="container-fluid py-3 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="news-filter-wrapper">
+                        <div class="news-filter-tabs">
+                            <button class="news-filter-btn active" data-filter="all">
+                                <i class="bi bi-grid-fill me-2"></i>Semua
+                            </button>
+                            <button class="news-filter-btn" data-filter="berita">
+                                <i class="bi bi-newspaper me-2"></i>Berita
+                            </button>
+                            <button class="news-filter-btn" data-filter="agenda">
+                                <i class="bi bi-calendar-event me-2"></i>Agenda
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- All News Grid Start -->
+    <div class="container-fluid py-5 bg-light" id="semua-berita">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h1 class="display-6 mb-4">Semua Berita & Kegiatan</h1>
+            </div>
+
+            <div class="row g-4" id="newsGrid">
+                
+                <!-- News Item 1 - Berita -->
+                <div class="col-lg-4 col-md-6 news-item" data-category="berita">
+                    <div class="news-card wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="news-card-image">
+                            <img src="img/news-4.jpg" alt="Berita">
+                            <div class="news-card-badge badge-berita">Berita</div>
+                            <div class="news-card-date">
+                                <div class="date-day">10</div>
+                                <div class="date-month">Nov</div>
+                            </div>
+                        </div>
+                        <div class="news-card-content">
+                            <h4 class="news-card-title">
+                                <a href="#">Kolaborasi dengan Industri: Lab Data Signing MoU dengan PT. Tech Innovator</a>
+                            </h4>
+                            <p class="news-card-excerpt">
+                                Penandatanganan kerjasama untuk pengembangan riset dan pelatihan mahasiswa di bidang data science...
+                            </p>
+                            <div class="news-card-footer">
+                                <span><i class="bi bi-person me-1"></i> Admin</span>
+                                <a href="#" class="news-read-more">Baca <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Item 2 - Agenda -->
+                <div class="col-lg-4 col-md-6 news-item" data-category="agenda">
+                    <div class="news-card wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="news-card-image">
+                            <img src="img/news-5.jpg" alt="Agenda">
+                            <div class="news-card-badge badge-agenda">Agenda</div>
+                            <div class="news-card-date">
+                                <div class="date-day">25</div>
+                                <div class="date-month">Nov</div>
+                            </div>
+                        </div>
+                        <div class="news-card-content">
+                            <h4 class="news-card-title">
+                                <a href="#">Workshop Python untuk Data Analysis - Batch 2</a>
+                            </h4>
+                            <p class="news-card-excerpt">
+                                Pelatihan intensif menggunakan Python, Pandas, dan Matplotlib untuk analisis data praktis...
+                            </p>
+                            <div class="news-card-footer">
+                                <span><i class="bi bi-calendar me-1"></i> 25 Nov 2024</span>
+                                <a href="#" class="news-read-more">Detail <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Item 3 - Pengumuman -->
+                <div class="col-lg-4 col-md-6 news-item" data-category="pengumuman">
+                    <div class="news-card wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="news-card-image">
+                            <img src="img/news-6.jpg" alt="Pengumuman">
+                            <div class="news-card-badge badge-pengumuman">Pengumuman</div>
+                            <div class="news-card-date">
+                                <div class="date-day">12</div>
+                                <div class="date-month">Nov</div>
+                            </div>
+                        </div>
+                        <div class="news-card-content">
+                            <h4 class="news-card-title">
+                                <a href="#">Hasil Seleksi Penelitian Mahasiswa Semester Ganjil 2024/2025</a>
+                            </h4>
+                            <p class="news-card-excerpt">
+                                Pengumuman hasil seleksi proposal penelitian mahasiswa yang akan didanai oleh laboratorium...
+                            </p>
+                            <div class="news-card-footer">
+                                <span><i class="bi bi-megaphone me-1"></i> Penting</span>
+                                <a href="#" class="news-read-more">Lihat <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Item 4 - Berita -->
+                <div class="col-lg-4 col-md-6 news-item" data-category="berita">
+                    <div class="news-card wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="news-card-image">
+                            <img src="img/news-7.jpg" alt="Berita">
+                            <div class="news-card-badge badge-berita">Berita</div>
+                            <div class="news-card-date">
+                                <div class="date-day">08</div>
+                                <div class="date-month">Nov</div>
+                            </div>
+                        </div>
+                        <div class="news-card-content">
+                            <h4 class="news-card-title">
+                                <a href="#">Mahasiswa Lab Data Raih Juara 1 Kompetisi Data Science Nasional</a>
+                            </h4>
+                            <p class="news-card-excerpt">
+                                Tim mahasiswa berhasil meraih prestasi gemilang dalam kompetisi tingkat nasional...
+                            </p>
+                            <div class="news-card-footer">
+                                <span><i class="bi bi-trophy me-1"></i> Prestasi</span>
+                                <a href="#" class="news-read-more">Baca <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Item 5 - Agenda -->
+                <div class="col-lg-4 col-md-6 news-item" data-category="agenda">
+                    <div class="news-card wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="news-card-image">
+                            <img src="img/news-8.jpg" alt="Agenda">
+                            <div class="news-card-badge badge-agenda">Agenda</div>
+                            <div class="news-card-date">
+                                <div class="date-day">30</div>
+                                <div class="date-month">Nov</div>
+                            </div>
+                        </div>
+                        <div class="news-card-content">
+                            <h4 class="news-card-title">
+                                <a href="#">Guest Lecture: Data Engineering Best Practices</a>
+                            </h4>
+                            <p class="news-card-excerpt">
+                                Kuliah tamu dari praktisi senior industri membahas best practices dalam data engineering...
+                            </p>
+                            <div class="news-card-footer">
+                                <span><i class="bi bi-mortarboard me-1"></i> Kuliah Tamu</span>
+                                <a href="#" class="news-read-more">Detail <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Item 6 - Berita -->
+                <div class="col-lg-4 col-md-6 news-item" data-category="berita">
+                    <div class="news-card wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="news-card-image">
+                            <img src="img/news-9.jpg" alt="Berita">
+                            <div class="news-card-badge badge-berita">Berita</div>
+                            <div class="news-card-date">
+                                <div class="date-day">05</div>
+                                <div class="date-month">Nov</div>
+                            </div>
+                        </div>
+                        <div class="news-card-content">
+                            <h4 class="news-card-title">
+                                <a href="#">Lab Data Launching Platform E-Learning untuk Mahasiswa</a>
+                            </h4>
+                            <p class="news-card-excerpt">
+                                Platform baru untuk mendukung pembelajaran jarak jauh dan self-paced learning mahasiswa...
+                            </p>
+                            <div class="news-card-footer">
+                                <span><i class="bi bi-laptop me-1"></i> Teknologi</span>
+                                <a href="#" class="news-read-more">Baca <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Pagination -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <nav aria-label="News pagination">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1">
+                                    <i class="bi bi-chevron-left"></i>
+                                </a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">
+                                    <i class="bi bi-chevron-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- All News Grid End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer-main-section position-relative bg-dark text-white-50 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row g-5 py-5">
+
+                <div class="col-lg-6 pe-lg-5">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="h1 text-primary mb-0" style="font-size: 2.0rem;">
+                            Laboratorium <span class="text-white">Teknologi Data</span>
+                        </h1>
+                    </a>
+                    <p class="fs-5 mb-4">
+                        Laboratorium riset dan pengembangan di bawah Jurusan Teknologi Informasi,
+                        Politeknik Negeri Malang. Fokus pada penerapan nyata teknologi data, jaringan,
+                        keamanan, dan rekayasa perangkat lunak.
+                    </p>
+                    <p><i class="fa fa-map-marker-alt me-2"></i>Gedung JTI, Politeknik Negeri Malang</p>
+                    <p><i class="fa fa-phone-alt me-2"></i>+62 812-0000-0000</p>
+                    <p><i class="fa fa-envelope me-2"></i>lab.teknologidata@polinema.ac.id</p>
+
+                    <div class="d-flex mt-4">
+                        <a class="btn btn-lg-square btn-primary me-2" href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-lg-square btn-primary me-2" href="#"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-lg-square btn-primary me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 ps-lg-5">
+                    <div class="row g-5">
+
+                        <div class="col-sm-6">
+                            <h4 class="text-light mb-4">Navigasi Cepat</h4>
+                            <a class="btn btn-link" href="profil.html">Profil Lab</a>
+                            <a class="btn btn-link" href="fasilitas.html">Fasilitas</a>
+                            <a class="btn btn-link" href="publikasi.html">Publikasi & Jurnal</a>
+                            <a class="btn btn-link" href="berita.html">Berita & Agenda</a>
+                            <a class="btn btn-link" href="galeri.html">Galeri Kegiatan</a>
+                            <a class="btn btn-link" href="kontak.html">Kontak & Kerja Sama</a>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <h4 class="text-light mb-4">Dokumentasi</h4>
+                            <a class="btn btn-link" href="#">Struktur Organisasi</a>
+                            <a class="btn btn-link" href="#">SOP Penggunaan Lab</a>
+                            <a class="btn btn-link" href="#">Form Peminjaman Fasilitas</a>
+                            <a class="btn btn-link" href="#">HKI & Paten</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid footer-copyright-bar bg-dark text-white-50 py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; <a href="#">Laboratorium Teknologi Data</a>. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- News Filter Script -->
+    <script>
+        // Filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.news-filter-btn');
+            const newsItems = document.querySelectorAll('.news-item');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+
+                    const filter = this.getAttribute('data-filter');
+
+                    newsItems.forEach(item => {
+                        if (filter === 'all') {
+                            item.style.display = 'block';
+                            setTimeout(() => {
+                                item.classList.add('show');
+                            }, 10);
+                        } else {
+                            if (item.getAttribute('data-category') === filter) {
+                                item.style.display = 'block';
+                                setTimeout(() => {
+                                    item.classList.add('show');
+                                }, 10);
+                            } else {
+                                item.classList.remove('show');
+                                setTimeout(() => {
+                                    item.style.display = 'none';
+                                }, 300);
+                            }
+                        }
+                    });
+                });
+            });
+
+            // Show all items on load
+            newsItems.forEach(item => {
+                item.classList.add('show');
+            });
+        });
+    </script>
+</body>
+
+</html>
