@@ -1,12 +1,3 @@
-/* ============================================
-   PROFIL.CSS - HALAMAN PROFIL LABORATORIUM
-   Laboratorium Teknologi Data - JTI Polinema
-   ============================================ */
-
-/* ============================================
-   PROFIL LAB SECTION
-   ============================================ */
-
 .profile-page-img-container {
     position: relative;
     overflow: hidden;
@@ -191,21 +182,56 @@
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
+/* Kepala Lab Card - Lebih Besar & Special */
+.profile-page-team-head {
+    box-shadow: 0 8px 30px rgba(102, 126, 234, 0.2);
+    border: 2px solid rgba(102, 126, 234, 0.1);
+}
+
+.profile-page-team-head:hover {
+    box-shadow: 0 15px 45px rgba(102, 126, 234, 0.3);
+    border-color: rgba(102, 126, 234, 0.3);
+}
+
 .profile-page-team-img {
     position: relative;
     overflow: hidden;
     height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+    padding: 20px;
 }
 
+/* Foto Oval/Circle - PERFECT FIT */
 .profile-page-team-img img {
-    width: 100%;
-    height: 100%;
+    width: 280px;
+    height: 280px;
     object-fit: cover;
-    transition: transform 0.5s ease;
+    object-position: center;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Kepala Lab - Foto Lebih Besar */
+.profile-page-team-head .profile-page-team-img {
+    height: 400px;
+    padding: 30px;
+}
+
+.profile-page-team-head .profile-page-team-img img {
+    width: 320px;
+    height: 320px;
+    border-width: 6px;
+    border-color: #667eea;
 }
 
 .profile-page-team-card:hover .profile-page-team-img img {
-    transform: scale(1.1);
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 /* Social Media Overlay */
@@ -277,6 +303,12 @@
     font-size: 1.2rem;
 }
 
+/* Kepala Lab - Nama Lebih Besar */
+.profile-page-team-head .profile-page-team-content h5 {
+    font-size: 1.4rem;
+    color: #667eea;
+}
+
 .profile-page-team-position {
     display: inline-block;
     padding: 5px 15px;
@@ -291,6 +323,8 @@
 .profile-page-team-position.kepala-lab {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: #fff;
+    padding: 8px 20px;
+    font-size: 0.9rem;
 }
 
 .profile-page-team-expertise {
@@ -321,7 +355,23 @@
     }
 
     .profile-page-team-img {
-        height: 300px;
+        height: 320px;
+        padding: 15px;
+    }
+
+    .profile-page-team-img img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .profile-page-team-head .profile-page-team-img {
+        height: 360px;
+        padding: 20px;
+    }
+
+    .profile-page-team-head .profile-page-team-img img {
+        width: 280px;
+        height: 280px;
     }
 }
 
@@ -361,7 +411,29 @@
     }
 
     .profile-page-team-img {
+        height: 280px;
+        padding: 15px;
+    }
+
+    .profile-page-team-img img {
+        width: 220px;
+        height: 220px;
+        border-width: 4px;
+    }
+
+    .profile-page-team-head .profile-page-team-img {
+        height: 320px;
+        padding: 20px;
+    }
+
+    .profile-page-team-head .profile-page-team-img img {
+        width: 250px;
         height: 250px;
+        border-width: 5px;
+    }
+
+    .profile-page-team-head .profile-page-team-content h5 {
+        font-size: 1.2rem;
     }
 
     .profile-page-feature-box {
@@ -388,6 +460,26 @@
         width: 40px;
         height: 40px;
         font-size: 1rem;
+    }
+
+    .profile-page-team-img {
+        height: 260px;
+        padding: 10px;
+    }
+
+    .profile-page-team-img img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .profile-page-team-head .profile-page-team-img {
+        height: 300px;
+        padding: 15px;
+    }
+
+    .profile-page-team-head .profile-page-team-img img {
+        width: 230px;
+        height: 230px;
     }
 }
 
