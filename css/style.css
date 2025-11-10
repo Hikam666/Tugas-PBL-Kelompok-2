@@ -555,67 +555,6 @@ img.navbar-logo-lab{
 }
 
 
-/*** Service Section (Fasilitas / Kapabilitas) ***/
-.section-facilities-container {
-    position: relative;
-}
-
-.section-facilities-container::before {
-    position: absolute;
-    content: '';
-    background: var(--bs-light);
-    width: 100%;
-    height: 100%;
-    left: 0px;
-    top: 0px;
-    clip-path: polygon(0 0, 100% 0, 100% 30%, 0 70%);
-    z-index: -1;
-}
-
-.facility-card-item {
-    position: relative;
-    height: 100%;
-    padding: 45px 30px;
-    background: var(--bs-white);
-    box-shadow: 0 0 45px rgba(0, 0, 0, .05);
-}
-
-.facility-card-item::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 0;
-    left: 0;
-    bottom: 0;
-    transition: .5s;
-    background: var(--bs-primary);
-}
-
-.facility-card-item:hover::before {
-    height: 100%;
-    top: 0;
-}
-
-.facility-card-item * {
-    position: relative;
-    transition: .5s;
-    z-index: 1;
-}
-
-.facility-card-item:hover h5,
-.facility-card-item:hover p {
-    color: var(--bs-white);
-}
-
-.facility-card-item:hover .icon-box-primary::before {
-    background: var(--bs-dark);
-}
-
-.facility-card-item:hover .icon-box-primary i {
-    color: var(--bs-white) !important;
-}
-
-
 /*** Team Section ***/
 .section-team-container {
     position: relative;
