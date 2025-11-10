@@ -1039,3 +1039,114 @@ img.navbar-logo-lab{
     background-color: #001037;
     border-color: #001037;
 }
+
+
+/* --- Logo Polinema --- */
+.navbar-logo-polinema {
+  height: 80px;           /* ukuran default desktop */
+  width: auto;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+/* --- Logo Lab Teknologi Data --- */
+.navbar-logo-lab {
+  height: 65px;           /* default desktop */
+  width: auto;
+  margin-left: auto;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+/* --- Teks Tengah (Judul Jurusan & Kampus) --- */
+.judul-tengah h5 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0056b3;
+}
+
+.judul-tengah h6 {
+  font-size: 0.95rem;
+  color: #333;
+  font-weight: 600;
+}
+
+/* --- Struktur dasar navbar agar rapi --- */
+.navbar-brand {
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.navbar .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* =========================== */
+/* RESPONSIF UNTUK TABLET DAN HP */
+/* =========================== */
+@media (max-width: 992px) {
+  .navbar-logo-polinema {
+    height: 70px;
+  }
+
+  .navbar-logo-lab {
+    height: 100
+    px;
+  }
+
+  .judul-tengah h5 {
+    font-size: 1rem;
+  }
+
+  .judul-tengah h6 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+  }
+
+  .navbar-logo-polinema {
+    height: 60px;
+    margin-bottom: 8px;
+  }
+
+  .judul-tengah h5 {
+    font-size: 0.95rem;
+  }
+
+  .judul-tengah h6 {
+    font-size: 0.85rem;
+  }
+
+  .navbar-logo-lab {
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-logo-polinema {
+    height: 55px;
+  }
+
+  .navbar-logo-lab {
+    height: 45px;
+  }
+
+  .judul-tengah h5 {
+    font-size: 0.9rem;
+  }
+
+  .judul-tengah h6 {
+    font-size: 0.8rem;
+  }
+}
