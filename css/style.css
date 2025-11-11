@@ -216,6 +216,11 @@ img.navbar-logo-lab{
     width: auto;
     filter: drop-shadow(0 2px 2px rgba(0,0,0,0.4));
 }
+.navbar-logo-tengah {
+    height: 55px;  /* Sedikit lebih kecil dari Polinema */
+    width: auto;
+    margin-right: 15px;
+}
 
 /* teks jurusan */
 .navbar-text-jurusan {
@@ -1088,4 +1093,5 @@ img.navbar-logo-lab{
   .judul-tengah h6 {
     font-size: 0.8rem;
   }
+  
 }
