@@ -30,7 +30,6 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/galeri.css" rel="stylesheet">
 </head>
 
 <body>
@@ -86,8 +85,8 @@
                     <div class="nav-item dropdown">
                         <a href="profil.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Profil Lab</a>
                         <div class="dropdown-menu bg-light m-0">
+                            <a href="profil.html#profil-lab" class="dropdown-item">Profil Lab</a>
                             <a href="profil.html#visi-misi" class="dropdown-item">Visi & Misi</a>
-                            <a href="profil.html#sejarah" class="dropdown-item">Sejarah</a>
                             <a href="profil.html#anggota" class="dropdown-item">Anggota Tim</a>
                         </div>
                     </div>
@@ -96,18 +95,78 @@
 
                     <a href="publikasi.html" class="nav-item nav-link">Riset & Publikasi</a>
 
-                    <a
-                     href="berita.html" class="nav-item nav-link">Berita & Agenda</a>
+                    <a href="berita.html" class="nav-item nav-link">Berita & Agenda</a>
                        
 
-                    <a href="galeri.html" class="nav-item nav-link active">Galeri</a>
-                    <a href="index.html#kontak" class="nav-item nav-link">Kontak & Kerja Sama</a>
+                    <a href="galeri.html" class="nav-item nav-link">Galeri</a>
+                    <a href="index.html#kontak" class="nav-item nav-link ">Kontak & Kerja Sama</a>
                 </div>
             </div>
         </nav>
     </div>
 </div>
 <!-- Navbar End -->
+
+
+
+    <!-- Carousel / Hero Start -->
+    <div class="container-fluid hero-carousel-main px-0 mb-5">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <!-- Slide 1: identitas lab -->
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/gedungTI.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-lg-7 text-start">
+                                    <h1 class="display-1 text-white animated slideInRight mb-3">
+                                        Laboratorium Teknologi Data - JTI Polinema
+                                    </h1>
+                                    <p class="mb-5 animated slideInRight">
+                                        Riset terapan, pengujian teknologi, dan pengembangan solusi berbasis data & jaringan.
+                                        Fokus kami: penelitian, publikasi, dan kolaborasi industri.
+                                    </p>
+                                    <a href="profil.html" class="btn btn-primary py-3 px-5 animated slideInRight">Lihat Profil Lab</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2: fasilitas -->
+                <div class="carousel-item">
+                    <img class="w-100" src="img/gedungTI2.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-end">
+                                <div class="col-lg-7 text-end">
+                                    <h1 class="display-1 text-white animated slideInLeft mb-3">Fasilitas & Infrastruktur Riset</h1>
+                                    <p class="mb-5 animated slideInLeft">
+                                        Workstation high-performance, jaringan internal terkontrol, ruang uji,
+                                        dokumentasi alat lengkap untuk penelitian mahasiswa dan dosen.
+                                    </p>
+                                    <a href="fasilitas.html" class="btn btn-primary py-3 px-5 animated slideInLeft">Lihat Fasilitas</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Sebelumnya</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Selanjutnya</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
 
 <!-- Gallery Section Start -->
 <div class="container-fluid py-5">
