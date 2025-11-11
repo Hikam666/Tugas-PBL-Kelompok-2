@@ -217,7 +217,7 @@ img.navbar-logo-lab{
     filter: drop-shadow(0 2px 2px rgba(0,0,0,0.4));
 }
 .navbar-logo-tengah {
-    height: 55px;  /* Sedikit lebih kecil dari Polinema */
+    height: 70px;  /* Sedikit lebih kecil dari Polinema */
     width: auto;
     margin-right: 15px;
 }
