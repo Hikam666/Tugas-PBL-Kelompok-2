@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta charset="utf-8">
-    <title>Laboratorium Teknologi Data - JTI Polinema</title>
+    <title>Berita & Agenda - Laboratorium Teknologi Data JTI Polinema</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="laboratorium informatika terapan, jaringan, ai, data, polinema" name="keywords">
-    <meta content="Laboratorium Informatika Terapan JTI Polinema: fasilitas riset, publikasi, kegiatan, dan kolaborasi industri" name="description">
+    <meta content="berita laboratorium, agenda kegiatan, pengumuman" name="keywords">
+    <meta content="Berita terkini, agenda kegiatan, dan pengumuman Laboratorium Teknologi Data" name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -14,8 +14,7 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Red+Rose:wght@600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Red+Rose:wght@600;700&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -30,116 +29,83 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    
+    <!-- News Page Stylesheet -->
+    <link href="css/StyleBerita.css" rel="stylesheet">
 </head>
 
 <body>
     <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
     </div>
     <!-- Spinner End -->
 
 
-<!-- Header Institusi (bar biru gradasi) -->
-<div class="navbar-top-bar d-none d-lg-block"></div>
+    <!-- Header Institusi (bar biru gradasi) -->
+    <div class="navbar-top-bar d-none d-lg-block"></div>
 
-<!-- Navbar Start -->
-<div class="container-fluid sticky-top navbar-container-wrapper">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg bg-white py-lg-0 px-lg-3 rounded-bottom navbar-card-white">
-            <!-- Kiri: Logo + teks jurusan -->
-            <a href="index.html" class="navbar-brand d-flex align-items-start flex-lg-row flex-column me-4">
-                <div class="d-flex align-items-start">
-                    <img src="img/logo-polinema.png" alt="Polinema Logo"
-                         class="me-3 navbar-logo-polinema">
-                    <img src="img/logo-jti.png" alt="Logo JTI" class="navbar-logo-tengah me-3">
-                    <div class="lh-sm">
-                       <div class="judul-tengah text-center">
-                            <h5 class="m-0 text-primary" style="font-weight: 700; line-height: 1.2;">
-                              JURUSAN TEKNOLOGI INFORMASI
-                            </h5>
-                            <h6 class="m-0" style="font-weight: 600; color: #333;">
-                              POLITEKNIK NEGERI MALANG
-                            </h6>
-                            </div>
-                    </div>
-                    
-                    <!-- Logo Lab -->
-                    <img src="img/logoLab.png" alt="Lab Teknologi Data" class="navbar-logo-lab">
-                    
-                </div>
-            </a>
-
-            <!-- Mobile burger -->
-            <button type="button" class="navbar-toggler ms-auto" data-bs-toggle="collapse"
-                data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Menu -->
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-lg-0">
-                    <a href="index.html" class="nav-item nav-link active">Beranda</a>
-
-                    <div class="nav-item dropdown">
-                        <a href="profil.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Profil Lab</a>
-                        <div class="dropdown-menu bg-light m-0">
-                            <a href="profil.html#profil-lab" class="dropdown-item">Profil Lab</a>
-                            <a href="profil.html#visi-misi" class="dropdown-item">Visi & Misi</a>
-                            <a href="profil.html#anggota" class="dropdown-item">Anggota Tim</a>
-                        </div>
-                    </div>
-
-                    <a href="fasilitas.html" class="nav-item nav-link">Fasilitas</a>
-
-                    <a href="publikasi.html" class="nav-item nav-link">Riset & Publikasi</a>
-
-                    <a href="berita.html" class="nav-item nav-link">Berita & Agenda</a>
-                       
-
-                    <a href="galeri.html" class="nav-item nav-link">Galeri</a>
-                    <a href="index.html#kontak" class="nav-item nav-link ">Kontak & Kerja Sama</a>
-                </div>
-            </div>
-        </nav>
-    </div>
-</div>
-<!-- Navbar End -->
-
-
-                <!-- Slide 2: fasilitas -->
-                <div class="carousel-item">
-                    <img class="w-100" src="img/gedungTI2.jpg" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-end">
-                                <div class="col-lg-7 text-end">
-                                    <h1 class="display-1 text-white animated slideInLeft mb-3">Fasilitas & Infrastruktur Riset</h1>
-                                    <p class="mb-5 animated slideInLeft">
-                                        Workstation high-performance, jaringan internal terkontrol, ruang uji,
-                                        dokumentasi alat lengkap untuk penelitian mahasiswa dan dosen.
-                                    </p>
-                                    <a href="fasilitas.html" class="btn btn-primary py-3 px-5 animated slideInLeft">Lihat Fasilitas</a>
-                                </div>
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top navbar-container-wrapper">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-white py-lg-0 px-lg-3 rounded-bottom navbar-card-white">
+                <!-- Kiri: Logo + teks jurusan -->
+                <a href="index.html" class="navbar-brand d-flex align-items-start flex-lg-row flex-column me-4">
+                    <div class="d-flex align-items-start">
+                        <img src="img/logo-polinema.jpg" alt="Polinema Logo" class="me-3 navbar-logo-polinema">
+                        <div class="lh-sm">
+                           <div class="judul-tengah text-center">
+                                <h5 class="m-0 text-primary" style="font-weight: 700; line-height: 1.2;">
+                                  JURUSAN TEKNOLOGI INFORMASI
+                                </h5>
+                                <h6 class="m-0" style="font-weight: 600; color: #333;">
+                                  POLITEKNIK NEGERI MALANG
+                                </h6>
                             </div>
                         </div>
+                        
+                        <!-- Logo Lab -->
+                        <img src="img/logoLab.png" alt="Lab Teknologi Data" class="navbar-logo-lab">
+                    </div>
+                </a>
+
+                <!-- Mobile burger -->
+                <button type="button" class="navbar-toggler ms-auto" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu -->
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-lg-0">
+                        <a href="index.html" class="nav-item nav-link">Beranda</a>
+
+                        <div class="nav-item dropdown">
+                            <a href="profil.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Profil Lab</a>
+                            <div class="dropdown-menu bg-light m-0">
+                                <a href="profil.html#visi-misi" class="dropdown-item">Visi & Misi</a>
+                                <a href="profil.html#sejarah" class="dropdown-item">Sejarah</a>
+                                <a href="profil.html#struktur" class="dropdown-item">Struktur Organisasi</a>
+                                <a href="profil.html#anggota" class="dropdown-item">Staf & Mahasiswa</a>
+                            </div>
+                        </div>
+
+                        <a href="fasilitas.html" class="nav-item nav-link">Fasilitas</a>
+
+                        <a href="publikasi.html" class="nav-item nav-link">Riset & Publikasi</a>
+
+
+                        <div class="nav-item dropdown">
+                            <a href="berita.html" class="nav-item nav-link active" data-bs-toggle="dropdown">Berita & Agenda</a>
+                        </div>
+
+                        <a href="galeri.html" class="nav-item nav-link">Galeri</a>
+                        <a href="index.html#kontak" class="nav-item nav-link">Kontak & Kerja Sama</a>
                     </div>
                 </div>
-
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Sebelumnya</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Selanjutnya</span>
-            </button>
+            </nav>
         </div>
     </div>
-    <!-- Carousel End -->
-
+    <!-- Navbar End -->
 
 
     <!-- Page Header Start -->
