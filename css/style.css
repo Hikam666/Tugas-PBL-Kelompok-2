@@ -117,7 +117,7 @@
 /* Logo Lab Teknologi di pojok kanan atas navbar */
 img.navbar-logo-lab{
   position: absolute;
-  top: 30px;
+  top: 5px;
   right: 45px;
   height: 90px !important;  
   width: auto !important;
@@ -214,7 +214,7 @@ img.navbar-logo-lab{
     filter: drop-shadow(0 2px 2px rgba(0,0,0,0.4));
 }
 .navbar-logo-tengah {
-    height: 70px;  /* Sedikit lebih kecil dari Polinema */
+    height: 72px;  /* Sedikit lebih kecil dari Polinema */
     width: auto;
     margin-right: 15px;
 }
