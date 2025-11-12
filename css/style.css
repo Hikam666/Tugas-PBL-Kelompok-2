@@ -183,31 +183,28 @@ img.navbar-logo-lab{
     }
 }
 
-
-
 /* wrapper di belakang navbar card putih */
 .navbar-container-wrapper {
     background: transparent;
     margin-top: -36px; 
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
-
-/* nav-card = kotak putih (logo + menu) */
+/* bikin navbar lebih tinggi dan center isi + nav-card = kotak putih (logo + menu)*/
 .navbar-card-white {
     background: #fff;
     box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-    border-radius: 20px; /* Coba ini dulu */
-    flex-wrap: wrap;
-}
-
-/* bikin navbar lebih tinggi dan center isi */
-.navbar-card-white {
-    background: #fff;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-    border-radius: 25px 25px 25px 25px;
+    border-radius: 0 !important;
     min-height: 88px;
     align-items: center;
     padding-top: 12px !important;
     padding-bottom: 12px !important;
+    padding-left: 0 !important;      
+    padding-right: 0 !important;  
+    /* pepetin kiri kanan navbarnya */
+    width: 100% !important;
+    max-width: 100% !important;
+    flex-wrap: wrap;
 }
 
 /* logo institusi */
@@ -1091,6 +1088,5 @@ img.navbar-logo-lab{
 
   .judul-tengah h6 {
     font-size: 0.8rem;
-  }
-  
+}
 }
