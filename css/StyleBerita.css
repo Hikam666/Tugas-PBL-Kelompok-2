@@ -1,11 +1,5 @@
-/* ============================================
-   BERITA.CSS - HALAMAN BERITA & AGENDA
-   Laboratorium Teknologi Data - JTI Polinema
-   ============================================ */
 
-/* ============================================
-   FILTER SECTION
-   ============================================ */
+/* FILTER SECTION */
 
 .news-filter-wrapper {
     background: #fff;
@@ -49,9 +43,7 @@
 }
 
 
-/* ============================================
-   NEWS CARD - GENERAL STYLES
-   ============================================ */
+/* NEWS CARD - GENERAL STYLES */
 
 .news-card {
     background: #fff;
@@ -86,7 +78,7 @@
     transform: scale(1.1);
 }
 
-/* News Badge */
+/* News Badge - Category */
 .news-card-badge {
     position: absolute;
     top: 15px;
@@ -224,9 +216,7 @@
 }
 
 
-/* ============================================
-   FEATURED NEWS CARD (LARGE)
-   ============================================ */
+/* FEATURED NEWS CARD (LARGE) */
 
 .news-card-featured {
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
@@ -245,9 +235,7 @@
 }
 
 
-/* ============================================
-   SMALL NEWS CARD (SIDEBAR)
-   ============================================ */
+/* SMALL NEWS CARD (SIDEBAR) */
 
 .news-card-small {
     background: #fff;
@@ -333,9 +321,7 @@
 }
 
 
-/* ============================================
-   NEWS ITEM ANIMATION
-   ============================================ */
+/* NEWS ITEM ANIMATION */
 
 .news-item {
     opacity: 0;
@@ -349,9 +335,7 @@
 }
 
 
-/* ============================================
-   PAGINATION
-   ============================================ */
+/* PAGINATION */
 
 .pagination {
     margin-top: 30px;
@@ -385,11 +369,37 @@
 }
 
 
-/* ============================================
-   RESPONSIVE DESIGN
-   ============================================ */
+/* UTILITY CLASSES */
 
-/* Tablet */
+.news-loading {
+    text-align: center;
+    padding: 50px 20px;
+    color: #888;
+}
+
+.news-empty {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.news-empty i {
+    font-size: 4rem;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.news-empty h4 {
+    color: #666;
+    font-weight: 600;
+}
+
+.news-empty p {
+    color: #888;
+}
+
+
+/* RESPONSIVE DESIGN */
+
 @media (max-width: 991.98px) {
     .news-filter-tabs {
         gap: 6px;
@@ -422,7 +432,6 @@
     }
 }
 
-/* Mobile */
 @media (max-width: 767.98px) {
     .news-filter-wrapper {
         padding: 6px;
@@ -490,7 +499,6 @@
     }
 }
 
-/* Small Mobile */
 @media (max-width: 575.98px) {
     .news-filter-btn {
         padding: 6px 12px;
@@ -527,57 +535,4 @@
         margin: 0 3px;
         font-size: 0.9rem;
     }
-}
-
-
-/* ============================================
-   UTILITY CLASSES
-   ============================================ */
-
-.news-loading {
-    text-align: center;
-    padding: 50px 20px;
-    color: #888;
-}
-
-.news-empty {
-    text-align: center;
-    padding: 80px 20px;
-}
-
-.news-empty i {
-    font-size: 4rem;
-    color: #ddd;
-    margin-bottom: 20px;
-}
-
-.news-empty h4 {
-    color: #666;
-    font-weight: 600;
-}
-
-.news-empty p {
-    color: #888;
-}
-
-
-/* ============================================
-   CUSTOM SCROLLBAR (Optional Enhancement)
-   ============================================ */
-
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #764ba2;
 }

@@ -1,35 +1,42 @@
 
-    .gallery-item {
-        position: relative;
-        cursor: pointer;
-        transition: all 0.3s;
-    }
+/* FILTER BUTTONS SECTION */
 
-    .gallery-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.7);
-        opacity: 0;
-        transition: all 0.3s;
-    }
+.btn-outline-primary.active {
+    background-color: var(--primary);
+    color: white;
+}
 
-    .gallery-item:hover .gallery-overlay {
-        opacity: 1;
-    }
 
-    .gallery-item img {
-        transition: all 0.3s;
-    }
+/* GALLERY GRID ITEMS */
 
-    .gallery-item:hover img {
-        transform: scale(1.1);
-    }
+.gallery-item {
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s;
+}
 
-    .btn-outline-primary.active {
-        background-color: var(--primary);
-        color: white;
-    }
+.gallery-item img {
+    transition: all 0.3s;
+}
 
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+
+/* GALLERY OVERLAY */
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}

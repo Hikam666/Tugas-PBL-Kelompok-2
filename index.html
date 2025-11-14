@@ -41,69 +41,77 @@
     <!-- Spinner End -->
 
 
-<!-- Header Institusi (bar biru gradasi) -->
-<div class="navbar-top-bar d-none d-lg-block"></div>
+<!-- Decorative Top Bar -->
+<div class="top-bar-gradient d-none d-md-block"></div>
 
-<!-- Navbar Start -->
-<div class="container-fluid sticky-top navbar-container-wrapper">
-        <nav class="navbar navbar-expand-lg bg-white py-lg-0 navbar-card-white container-fluid">
-            <!-- Kiri: Logo + teks jurusan -->
-            <a href="index.html" class="navbar-brand d-flex align-items-start flex-lg-row flex-column me-4">
-                <div class="d-flex align-items-start">
-                    <img src="img/logo-polinema.png" alt="Polinema Logo"
-                         class="me-3 navbar-logo-polinema">
-                    <img src="img/logo-jti.png" alt="Logo JTI" class="navbar-logo-tengah me-3">
-                    <div class="lh-sm">
-                       <div class="judul-tengah text-center">
-                            <h5 class="m-0 text-primary" style="font-weight: 700; line-height: 1.2;">
-                              JURUSAN TEKNOLOGI INFORMASI
-                            </h5>
-                            <h6 class="m-0" style="font-weight: 600; color: #333;">
-                              POLITEKNIK NEGERI MALANG
-                            </h6>
-                            </div>
-                    </div>
-                    
-                    <!-- Logo Lab -->
-                    <img src="img/logoLab.png" alt="Lab Teknologi Data" class="navbar-logo-lab">
-                    
+<!-- Header Container -->
+<div class="header-wrapper sticky-top bg-white">
+    <div class="container-fluid">
+        <div class="row align-items-center justify-content-center py-3 border-bottom">
+            <!-- Left: Logos Polinema & JTI -->
+            <div class="col-lg-2 col-md-3 col-4">
+                <div class="d-flex align-items-center justify-content-end gap-2">
+                    <img src="img/logo-polinema.png" alt="Polinema" class="logo-img">
+                    <img src="img/logo-jti.png" alt="JTI" class="logo-img">
                 </div>
-            </a>
+            </div>
 
-            <!-- Mobile burger -->
-            <button type="button" class="navbar-toggler ms-auto" data-bs-toggle="collapse"
-                data-bs-target="#navbarCollapse">
+            <!-- Center: Title -->
+            <div class="col-lg-6 col-md-4 col-4 text-center px-3">
+                <h5 class="mb-0 fw-bold text-primary">JURUSAN TEKNOLOGI INFORMASI</h5>
+                <small class="text-muted fw-semibold">Politeknik Negeri Malang</small>
+            </div>
+
+            <!-- Right: Lab Logo -->
+            <div class="col-lg-2 col-md-3 col-4">
+                <div class="d-flex align-items-center justify-content-start">
+                    <img src="img/logoLab.png" alt="Lab Teknologi Data" class="logo-img">
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light px-0">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#navMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- Menu -->
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-lg-0">
-                    <a href="index.html" class="nav-item nav-link active">Beranda</a>
-
-                    <div class="nav-item dropdown">
-                        <a href="profil.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Profil Lab</a>
-                        <div class="dropdown-menu bg-light m-0">
-                            <a href="profil.html#profil-lab" class="dropdown-item">Profil Lab</a>
-                            <a href="profil.html#visi-misi" class="dropdown-item">Visi & Misi</a>
-                            <a href="profil.html#anggota" class="dropdown-item">Anggota Tim</a>
-                        </div>
-                    </div>
-
-                    <a href="fasilitas.html" class="nav-item nav-link">Fasilitas</a>
-
-                    <a href="publikasi.html" class="nav-item nav-link">Riset & Publikasi</a>
-
-                    <a href="berita.html" class="nav-item nav-link">Berita & Agenda</a>
-                       
-
-                    <a href="galeri.html" class="nav-item nav-link">Galeri</a>
-                    <a href="index.html#kontak" class="nav-item nav-link active">Kontak & Kerja Sama</a>
-                </div>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active px-3">Beranda</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle px-3" data-bs-toggle="dropdown">
+                            Profil Lab
+                        </a>
+                        <ul class="dropdown-menu shadow-sm">
+                            <li><a href="profil.html#profil-lab" class="dropdown-item">Profil Lab</a></li>
+                            <li><a href="profil.html#visi-misi" class="dropdown-item">Visi & Misi</a></li>
+                            <li><a href="profil.html#anggota" class="dropdown-item">Anggota Tim</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="fasilitas.html" class="nav-link px-3">Fasilitas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="publikasi.html" class="nav-link px-3">Riset & Publikasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="berita.html" class="nav-link px-3">Berita & Agenda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="galeri.html" class="nav-link px-3">Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#kontak" class="nav-link px-3">Kontak & Kerja Sama</a>
+                    </li>
+                </ul>
             </div>
         </nav>
+    </div>
 </div>
-<!-- Navbar End -->
 
 
 
@@ -436,16 +444,9 @@
                             <a class="btn btn-link" href="publikasi.html">Publikasi & Jurnal</a>
                             <a class="btn btn-link" href="berita.html">Berita & Agenda</a>
                             <a class="btn btn-link" href="galeri.html">Galeri Kegiatan</a>
-                            <a class="btn btn-link" href="kontak.html">Kontak & Kerja Sama</a>
-                        </div>
-
-                        <div class="col-sm-6">
-                            <h4 class="text-light mb-4">Dokumentasi</h4>
+                            <a class="btn btn-link" href="index.html#kontak">Kontak & Kerja Sama</a>
                             <a class="btn btn-link" href="#">SOP Penggunaan Lab</a>
-                            <a class="btn btn-link" href="#">Form Peminjaman Fasilitas</a>
-                            <a class="btn btn-link" href="#">HKI & Paten</a>
                         </div>
-                    </div> <!-- row -->
                 </div> <!-- col-lg-6 -->
 
             </div> <!-- row -->

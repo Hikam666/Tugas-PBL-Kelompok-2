@@ -1,16 +1,3 @@
-.back-to-top {
-    position: fixed;
-    display: none;
-    right: 30px;
-    bottom: 30px;
-    z-index: 99;
-}
-
-.fw-medium {
-    font-weight: 500;
-}
-
-
 /*** Spinner ***/
 #spinner {
     opacity: 0;
@@ -26,329 +13,145 @@
 }
 
 
-/*** Button ***/
-.btn {
-    transition: .5s;
-    font-weight: 500;
+/*** Header - Top Bar Gradient ***/
+.top-bar-gradient {
+    height: 5px;
+    background: linear-gradient(to right, #0d6efd, #6610f2, #0d6efd);
 }
 
-.btn-primary,
-.btn-outline-primary:hover {
-    color: var(--bs-light);
+.navbar-top-bar {
+    background: linear-gradient(90deg, #003665 0%, #0d6efd 100%);
+    height: 48px; 
+    border-bottom: 3px solid rgba(255,255,255,0.4);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.25);
 }
 
-.btn-secondary,
-.btn-outline-secondary:hover {
-    color: var(--bs-dark);
-}
-
-.btn-square {
-    width: 38px;
-    height: 38px;
-}
-
-.btn-sm-square {
-    width: 32px;
-    height: 32px;
-}
-
-.btn-lg-square {
-    width: 48px;
-    height: 48px;
-}
-
-.btn-square,
-.btn-sm-square,
-.btn-lg-square {
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50px;
-    font-weight: normal;
-}
-
-.icon-box-primary,
-.icon-box-light {
-    position: relative;
-    padding: 0 0 10px 10px;
-    z-index: 1;
-}
-
-.icon-box-primary i,
-.icon-box-light i {
-    font-size: 60px;
-    line-height: 0;
-}
-
-.icon-box-primary::before,
-.icon-box-light::before {
-    position: absolute;
-    content: "";
-    width: 35px;
-    height: 35px;
-    left: 0;
-    bottom: 0;
-    border-radius: 35px;
-    transition: .5s;
-    z-index: -1;
-}
-
-.icon-box-primary::before {
-    background: var(--bs-primary);
-}
-
-.icon-box-light::before {
-    background: var(--bs-light);
+.navbar-topbar-lite {
+    background: #0f1f3a;
+    font-size: 0.8rem;
+    line-height: 1.2;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
 }
 
 
-/*** Navbar / Header area ***/
-
-/* sticky behavior */
-.sticky-top {
-    top: -100px;
-    transition: .5s;
+/*** Header - Header Wrapper ***/
+.header-wrapper {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-/* ============================================
-   LOGO LAB DI HEADER
-   ============================================ */
-/* Logo Lab Teknologi di pojok kanan atas navbar */
-img.navbar-logo-lab{
-  position: absolute;
-  top: 5px;
-  right: 45px;
-  height: 90px !important;  
-  width: auto !important;
-  max-height: none !important;
-  max-width: none !important;
+.header-wrapper h5 {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+}
+
+.header-wrapper small {
+    font-size: 0.9rem;
 }
 
 
-.logo-kanan img {
+/*** Header - Logo Styling ***/
+.logo-img {
     height: 60px;
-    width: 60px;
-    border-radius: 10;
-    object-fit: cover;
+    width: auto;
+    object-fit: contain;
 }
 
-/* Garis pemisah antara text dan logo lab */
-.navbar-divider {
-    width: 2px;                    
-    height: 55px;                  
-    background: #dee2e6;           
-    margin-left: 25px;            
-    margin-right: 25px;            
+.navbar-logo-polinema {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+  transition: all 0.3s ease;
 }
 
 .navbar-logo-lab {
-    height: 45px;                
-    width: auto;                   
-    max-width: 180px;            
+  height: 65px;
+  width: auto;
+  margin-left: auto;
+  object-fit: contain;
+  transition: all 0.3s ease;
 }
 
-/* Efek saat mouse hover di logo */
-.navbar-logo-lab:hover {
-    opacity: 0.8;                 
-    transition: 0.3s;            
+.judul-tengah h5 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0056b3;
 }
 
-/* Sembunyikan di tablet dan HP */
-@media (max-width: 991px) {
-    .navbar-logo-lab,
-    .navbar-divider {
-        display: none !important;
-    }
+.judul-tengah h6 {
+  font-size: 0.95rem;
+  color: #333;
+  font-weight: 600;
 }
 
-/* Untuk layar laptop kecil (992px - 1199px) */
-@media (min-width: 992px) and (max-width: 1199px) {
-    .navbar-logo-lab {
-        height: 40px;             
-        max-width: 150px;
-    }
-    
-    .navbar-divider {
-        margin-left: 15px;        
-        margin-right: 15px;
-    }
+.navbar-brand {
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
 }
 
-/* Untuk layar monitor besar (1400px ke atas) */
-@media (min-width: 1400px) {
-    .navbar-logo-lab {
-        height: 50px;            
-        max-width: 200px;
-    }
+.navbar .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-/* wrapper di belakang navbar card putih */
-.navbar-container-wrapper {
-    background: transparent;
-    margin-top: -36px; 
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-}
-/* bikin navbar lebih tinggi dan center isi + nav-card = kotak putih (logo + menu)*/
-.navbar-card-white {
-    background: #fff;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-    border-radius: 0 !important;
-    min-height: 88px;
-    align-items: center;
-    padding-top: 12px !important;
-    padding-bottom: 12px !important;
-    padding-left: 0 !important;      
-    padding-right: 0 !important;  
-    /* pepetin kiri kanan navbarnya */
-    width: 100% !important;
-    max-width: 100% !important;
-    flex-wrap: wrap;
+
+/*** Header - Sticky Navigation ***/
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    background: white;
 }
 
-/* logo institusi */
-.navbar-logo-polinema {
-    height: 64px; 
-    width: auto;
-    filter: drop-shadow(0 2px 2px rgba(0,0,0,0.4));
-}
-.navbar-logo-tengah {
-    height: 72px;  /* Sedikit lebih kecil dari Polinema */
-    width: auto;
-    margin-right: 15px;
-}
 
-/* teks jurusan */
-.navbar-text-jurusan {
-    font-size: 0.95rem;  
-    font-weight: 700;
-    letter-spacing: 0.03em;
-    color: #000;
-    text-shadow: none;
-    line-height: 1.2;
-}
-
-.navbar-text-kampus {
-    font-size: 1.05rem; 
-    font-weight: 700;
-    line-height: 1.2;
-    color: #000;
-    text-shadow: none;
-}
-
-/* warna link navbar */
-.navbar .navbar-nav {
-    align-items: center; 
-    display: flex;
-}
-
-.navbar .navbar-nav .nav-link {
-    margin-right: 24px;     
-    padding: 14px 0;         
-    font-size: 16px;
+/*** Header - Navigation Links ***/
+.nav-link {
     font-weight: 500;
-    outline: none;
+    color: #495057;
+    transition: all 0.3s ease;
+    position: relative;
 }
 
-.navbar .navbar-nav .nav-link:hover,
-.navbar .navbar-nav .nav-link.active {
-    color: #0d6efd;
+.nav-link:hover {
+    color: #0d6efd !important;
 }
 
-/* caret dropdown */
-.navbar .dropdown-toggle::after {
+.nav-link.active {
+    color: #0d6efd !important;
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 3px;
+    background: #0d6efd;
+    border-radius: 2px;
+}
+
+
+/*** Header - Dropdown Menu ***/
+.dropdown-menu {
     border: none;
-    content: "\f107";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    vertical-align: middle;
-    margin-left: 8px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    margin-top: 8px;
 }
 
-.navbar .dropdown-menu .dropdown-item {
-    font-size: 15px;
-    padding: 8px 16px;
+.dropdown-item {
+    padding: 0.6rem 1.5rem;
+    transition: all 0.3s ease;
 }
 
-/* tinggi sticky di desktop */
-@media (min-width: 992px) {
-    .sticky-top {
-        margin-top: -34px;
-    }
-
-    .navbar {
-        height: auto; 
-    }
-
-    .navbar .nav-item .dropdown-menu {
-        display: block;
-        border: none;
-        margin-top: 0;
-        top: 150%;
-        opacity: 0;
-        visibility: hidden;
-        transition: .5s;
-    }
-
-    .navbar .nav-item:hover .dropdown-menu {
-        top: 100%;
-        visibility: visible;
-        transition: .5s;
-        opacity: 1;
-    }
-}
-
-/* responsive mobile */
-@media (max-width: 991.98px) {
-    .navbar-top-bar {
-        display: none;
-    }
-
-    .navbar-container-wrapper {
-        margin-top: 0;
-        background: #fff;
-    }
-
-    .navbar-card-white {
-        border-radius: 0;
-        box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-    }
-
-    .navbar-brand {
-        flex-direction: row !important;
-    }
-
-    .navbar-logo-polinema {
-        height: 44px;
-    }
-
-    .navbar-text-jurusan {
-        font-size: .7rem;
-        font-weight: 700;
-        line-height: 1.2;
-    }
-
-    .navbar-text-kampus {
-        font-size: .8rem;
-        font-weight: 700;
-        line-height: 1.2;
-    }
-
-    /* menu nav turun jadi kolom, kasih border tipis antar item */
-    .navbar .navbar-nav .nav-link {
-        margin-right: 0;
-        padding: 10px 0;
-        border-top: 1px solid #EEE;
-        width: 100%;
-    }
-
-    .navbar .navbar-nav {
-        margin-top: 10px;
-        border-top: 1px solid #EEEEEE;
-        align-items: flex-start;
-        display: block;
-    }
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #0d6efd;
+    padding-left: 1.8rem;
 }
 
 
@@ -414,8 +217,229 @@ img.navbar-logo-lab{
     color: var(--bs-white);
 }
 
+/*** Header - Dropdown Menu ***/
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    margin-top: 8px;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
 
-/*** Features Section ***/
+.dropdown-item {
+    padding: 0.6rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #0d6efd;
+    padding-left: 1.8rem;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    margin-top: 0;
+}
+
+
+/*** About / Profil Lab Section ***/
+.section-profile-lab {
+    background-color: #ffffff;
+}
+
+.profile-photos-wrapper {
+    position: relative;
+    max-width: 520px;
+}
+
+.profile-photos-wrapper.no-stats-card {
+    padding-bottom: 0;
+}
+
+.profile-photos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px; 
+}
+
+.profile-photo-item {
+    width: 100%;
+    height: 250px; 
+    background-color: #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+}
+
+.profile-photo-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-stats-card {
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+    background-color: #2f58b8;
+    color: #fff;
+    border-radius: 6px;
+    padding: 20px 24px;
+    min-width: 220px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+.profile-stats-icon {
+    font-size: 28px;
+    line-height: 1;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.profile-stats-number {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 4px;
+    color: #fff;
+    font-family: "Red Rose", "Roboto", sans-serif;
+}
+
+.profile-stats-label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.profile-section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0b1a3a;
+    line-height: 1.2;
+    font-family: "Red Rose","Roboto",sans-serif;
+}
+
+.profile-section-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #5b6175;
+    max-width: 680px;
+    margin-bottom: 2rem;
+}
+
+.profile-statistics-bubbles {
+    margin-bottom: 1rem;
+}
+
+.profile-statistic-bubble {
+    border-radius: 50%;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.12);
+    color: #fff;
+    text-align: center;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+}
+
+.profile-bubble-label {
+    font-size: 0.95rem;
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: 8px;
+    text-align: center;
+    color: #fff;
+}
+
+.profile-bubble-number {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+}
+
+.bubble-color-blue {
+    background-color: #2f58b8; 
+}
+
+.bubble-color-dark {
+    background-color: #001037; 
+}
+
+.bubble-color-gray {
+    background-color: #7a8099; 
+}
+
+.bubble-size-fixed {
+    min-width: 180px;
+    min-height: 180px;
+}
+
+.profile-button-cta {
+    background-color: #2f58b8;
+    border-color: #2f58b8;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.profile-button-cta:hover {
+    background-color: #001037;
+    border-color: #001037;
+}
+
+@media (min-width: 992px) {
+    .profile-photos-wrapper {
+        padding-bottom: 80px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .profile-photos-wrapper {
+        padding-bottom: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .profile-stats-card {
+        bottom: -40px;
+    }
+    .profile-photo-item {
+        height: 120px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .profile-photo-item {
+        height: 140px;
+    }
+    
+    .profile-statistic-bubble {
+        width: 160px;
+        height: 160px;
+        min-width: 160px;
+        min-height: 160px;
+        padding: 16px;
+    }
+
+    .profile-bubble-number {
+        font-size: 1.8rem;
+    }
+}
+
+
+/*** Features / Research Section ***/
 .section-research-publications {
     background: linear-gradient(rgba(3, 27, 78, .3), rgba(3, 27, 78, .3)), url(../img/feature1.jpg) left center no-repeat;
     background-size: cover;
@@ -451,7 +475,7 @@ img.navbar-logo-lab{
 }
 
 
-/*** About Section ***/
+/*** About Section - Additional ***/
 .profile-fact-box {
     width: 220px;
     height: 220px;
@@ -724,369 +748,209 @@ img.navbar-logo-lab{
 }
 
 
-/*** Bar Biru Atas (navbar-top-bar) ***/
-
-.navbar-top-bar {
-    background: linear-gradient(90deg, #003665 0%, #0d6efd 100%);
-    height: 48px; 
-    border-bottom: 3px solid rgba(255,255,255,0.4);
-    box-shadow: 0 3px 8px rgba(0,0,0,0.25);
-}
-.navbar-topbar-lite {
-    background: #0f1f3a;
-    font-size: 0.8rem;
-    line-height: 1.2;
-    border-bottom: 1px solid rgba(255,255,255,0.15);
+/*** Back to Top ***/
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 30px;
+    z-index: 99;
 }
 
-/* ===========================
-   ABOUT / PROFIL LAB SECTION
-   =========================== */
 
-.section-profile-lab {
-    background-color: #ffffff;
-}
-
-/* --- KIRI (foto kolase + card publikasi) --- */
-
-.profile-photos-wrapper {
-    position: relative;
-    max-width: 520px;
-}
-
-.profile-photos-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
-}
-
-.profile-photo-item {
-    width: 100%;
-    height: 140px;
-    background-color: #ccc;
-    border-radius: 4px;
-    overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-}
-
-.profile-photo-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Kartu publikasi tahunan */
-.profile-stats-card {
-    position: absolute;
-    left: 50%;
-    bottom: -20px;
-    transform: translateX(-50%);
-    background-color: #2f58b8; /* biru Polinema-ish */
-    color: #fff;
-    border-radius: 6px;
-    padding: 20px 24px;
-    min-width: 220px;
-    text-align: center;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
-}
-
-.profile-stats-icon {
-    font-size: 28px;
-    line-height: 1;
-    margin-bottom: 8px;
-    color: #fff;
-}
-
-.profile-stats-number {
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 1;
-    margin-bottom: 4px;
-    color: #fff;
-    font-family: "Red Rose", "Roboto", sans-serif;
-}
-
-.profile-stats-label {
-    font-size: 16px;
+/*** Font Weight ***/
+.fw-medium {
     font-weight: 500;
-    color: #fff;
-}
-
-/* biar bawahnya gak ketabrak sama card */
-@media (min-width: 992px) {
-    .profile-photos-wrapper {
-        padding-bottom: 80px;
-    }
-}
-@media (max-width: 991.98px) {
-    .profile-photos-wrapper {
-        padding-bottom: 100px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .profile-stats-card {
-        bottom: -40px;
-    }
-    .profile-photo-item {
-        height: 120px;
-    }
-}
-
-/* ===================================
-   ABOUT / PROFIL LAB
-   =================================== */
-
-.section-profile-lab {
-    background-color: #ffffff;
 }
 
 
-.profile-photos-wrapper {
-    position: relative;
-    max-width: 520px;
+/*** Button ***/
+.btn {
+    transition: .5s;
+    font-weight: 500;
 }
 
-
-.profile-photos-wrapper.no-stats-card {
-    padding-bottom: 0;
+.btn-primary,
+.btn-outline-primary:hover {
+    color: var(--bs-light);
 }
 
-.profile-photos-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px; 
+.btn-secondary,
+.btn-outline-secondary:hover {
+    color: var(--bs-dark);
 }
 
-
-.profile-photo-item {
-    width: 100%;
-    height: 250px; 
-    background-color: #ccc;
-    border-radius: 4px;
-    overflow: hidden;
-    box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+.btn-square {
+    width: 38px;
+    height: 38px;
 }
 
-.profile-photo-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.btn-sm-square {
+    width: 32px;
+    height: 32px;
 }
 
-/* mobile tweak */
-@media (max-width: 575.98px) {
-    .profile-photo-item {
-        height: 140px;
-    }
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
 }
 
-/* --- KANAN (judul + deskripsi + bubble) --- */
-
-.profile-section-title {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #0b1a3a;
-    line-height: 1.2;
-    font-family: "Red Rose","Roboto",sans-serif;
-}
-
-.profile-section-description {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #5b6175;
-    max-width: 680px;
-    margin-bottom: 2rem;
-}
-
-.profile-statistics-bubbles {
-    margin-bottom: 1rem;
-}
-
-/* bubble individual */
-.profile-statistic-bubble {
-    border-radius: 50%;
-    box-shadow: 0 25px 50px rgba(0,0,0,0.12);
-    color: #fff;
-    text-align: center;
-    width: 180px;
-    height: 180px;
-
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding: 0;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-
-    padding: 20px;
-    font-family: "Roboto", sans-serif;
-}
-
-.profile-bubble-label {
-    font-size: 0.95rem;
-    font-weight: 500;
-    line-height: 1.3;
-    margin-bottom: 8px;
-    text-align: center;
-    color: #fff;
-}
-
-.profile-bubble-number {
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 1;
-    color: #fff;
+    justify-content: center;
+    border-radius: 50px;
+    font-weight: normal;
 }
 
 
-.bubble-color-blue {
-    background-color: #2f58b8; 
+/*** Icon Box ***/
+.icon-box-primary,
+.icon-box-light {
+    position: relative;
+    padding: 0 0 10px 10px;
+    z-index: 1;
 }
 
-.bubble-color-dark {
-    background-color: #001037; 
+.icon-box-primary i,
+.icon-box-light i {
+    font-size: 60px;
+    line-height: 0;
 }
 
-.bubble-color-gray {
-    background-color: #7a8099; 
+.icon-box-primary::before,
+.icon-box-light::before {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 35px;
+    left: 0;
+    bottom: 0;
+    border-radius: 35px;
+    transition: .5s;
+    z-index: -1;
 }
 
-.bubble-size-fixed {
-    min-width: 180px;
-    min-height: 180px;
+.icon-box-primary::before {
+    background: var(--bs-primary);
 }
 
-@media (max-width: 575.98px) {
-    .profile-statistic-bubble {
-        width: 160px;
-        height: 160px;
-        min-width: 160px;
-        min-height: 160px;
-        padding: 16px;
+.icon-box-light::before {
+    background: var(--bs-light);
+}
+
+
+/*** Responsive Header Adjustments ***/
+@media (max-width: 991px) {
+    .logo-img {
+        height: 45px;
+    }
+    
+    .header-wrapper h5 {
+        font-size: 0.9rem;
+    }
+    
+    .header-wrapper small {
+        font-size: 0.75rem;
+    }
+    
+    .navbar-nav {
+        padding-top: 1rem;
+    }
+    
+    .nav-link.active::after {
+        display: none;
+    }
+    
+    .navbar-logo-polinema {
+        height: 70px;
     }
 
-    .profile-bubble-number {
-        font-size: 1.8rem;
+    .navbar-logo-lab {
+        height: 100px;
     }
-}
 
-/* CTA button tetap */
-.profile-button-cta {
-    background-color: #2f58b8;
-    border-color: #2f58b8;
-    font-weight: 500;
-    font-size: 1rem;
-}
+    .judul-tengah h5 {
+        font-size: 1rem;
+    }
 
-.profile-button-cta:hover {
-    background-color: #001037;
-    border-color: #001037;
-}
-
-
-/* --- Logo Polinema --- */
-.navbar-logo-polinema {
-  height: 80px;           /* ukuran default desktop */
-  width: auto;
-  object-fit: contain;
-  transition: all 0.3s ease;
-}
-
-/* --- Logo Lab Teknologi Data --- */
-.navbar-logo-lab {
-  height: 65px;           /* default desktop */
-  width: auto;
-  margin-left: auto;
-  object-fit: contain;
-  transition: all 0.3s ease;
-}
-
-/* --- Teks Tengah (Judul Jurusan & Kampus) --- */
-.judul-tengah h5 {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #0056b3;
-}
-
-.judul-tengah h6 {
-  font-size: 0.95rem;
-  color: #333;
-  font-weight: 600;
-}
-
-/* --- Struktur dasar navbar agar rapi --- */
-.navbar-brand {
-  flex-wrap: wrap;
-  gap: 10px;
-  align-items: center;
-}
-
-.navbar .container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-/* =========================== */
-/* RESPONSIF UNTUK TABLET DAN HP */
-/* =========================== */
-@media (max-width: 992px) {
-  .navbar-logo-polinema {
-    height: 70px;
-  }
-
-  .navbar-logo-lab {
-    height: 100px;
-  }
-
-  .judul-tengah h5 {
-    font-size: 1rem;
-  }
-
-  .judul-tengah h6 {
-    font-size: 0.9rem;
-  }
+    .judul-tengah h6 {
+        font-size: 0.9rem;
+    }
 }
 
 @media (max-width: 768px) {
-  .navbar-brand {
-    flex-direction: column !important;
-    align-items: center !important;
-    text-align: center;
-  }
+    .logo-img {
+        height: 35px;
+    }
+    
+    .header-wrapper h5 {
+        font-size: 0.8rem;
+    }
+    
+    .header-wrapper small {
+        font-size: 0.7rem;
+    }
+    
+    .navbar-brand {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center;
+    }
 
-  .navbar-logo-polinema {
-    height: 60px;
-    margin-bottom: 8px;
-  }
+    .navbar-logo-polinema {
+        height: 60px;
+        margin-bottom: 8px;
+    }
 
-  .judul-tengah h5 {
-    font-size: 0.95rem;
-  }
+    .judul-tengah h5 {
+        font-size: 0.95rem;
+    }
 
-  .judul-tengah h6 {
-    font-size: 0.85rem;
-  }
+    .judul-tengah h6 {
+        font-size: 0.85rem;
+    }
 
-  .navbar-logo-lab {
-    height: 50px;
-    margin-top: 10px;
-    margin-left: 0;
-  }
+    .navbar-logo-lab {
+        height: 50px;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo-img {
+        height: 30px;
+    }
+    
+    .header-wrapper h5 {
+        font-size: 0.7rem;
+        line-height: 1.2;
+    }
+    
+    .header-wrapper small {
+        font-size: 0.65rem;
+        display: block;
+    }
 }
 
 @media (max-width: 480px) {
-  .navbar-logo-polinema {
-    height: 55px;
-  }
+    .navbar-logo-polinema {
+        height: 55px;
+    }
 
-  .navbar-logo-lab {
-    height: 45px;
-  }
+    .navbar-logo-lab {
+        height: 45px;
+    }
 
-  .judul-tengah h5 {
-    font-size: 0.9rem;
-  }
+    .judul-tengah h5 {
+        font-size: 0.9rem;
+    }
 
-  .judul-tengah h6 {
-    font-size: 0.8rem;
-}
+    .judul-tengah h6 {
+        font-size: 0.8rem;
+    }
 }

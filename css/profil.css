@@ -1,11 +1,4 @@
-/* ============================================
-   PROFIL.CSS - HALAMAN PROFIL LABORATORIUM
-   Laboratorium Teknologi Data - JTI Polinema
-   ============================================ */
-
-/* ============================================
-   PROFIL LAB SECTION
-   ============================================ */
+/* PROFIL LAB SECTION */
 
 .profile-page-img-container {
     position: relative;
@@ -51,11 +44,9 @@
 }
 
 
-/* ============================================
-   VISI MISI SECTION
-   ============================================ */
+/* VISI MISI SECTION (id="visi-misi") */
 
-/* Visi Card */
+/* Visi Card - Purple Gradient */
 .profile-page-vision-card {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     padding: 40px;
@@ -102,7 +93,7 @@
     color: rgba(255, 255, 255, 0.95);
 }
 
-/* Misi Card */
+/* Misi Card - White Background */
 .profile-page-mission-card {
     background: #fff;
     padding: 40px;
@@ -173,9 +164,7 @@
 }
 
 
-/* ============================================
-   TEAM SECTION
-   ============================================ */
+/* TEAM SECTION (id="anggota")= */
 
 .profile-page-team-card {
     background: #fff;
@@ -191,7 +180,7 @@
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
-/* Kepala Lab Card - Lebih Besar & Special */
+/* Kepala Lab - Special Card */
 .profile-page-team-head {
     box-shadow: 0 8px 30px rgba(102, 126, 234, 0.2);
     border: 2px solid rgba(102, 126, 234, 0.1);
@@ -202,6 +191,7 @@
     border-color: rgba(102, 126, 234, 0.3);
 }
 
+/* Team Image Container */
 .profile-page-team-img {
     position: relative;
     overflow: hidden;
@@ -213,7 +203,6 @@
     padding: 20px;
 }
 
-/* Foto Oval/Circle - PERFECT FIT */
 .profile-page-team-img img {
     width: 280px;
     height: 280px;
@@ -225,7 +214,6 @@
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
-/* Kepala Lab - Foto Lebih Besar */
 .profile-page-team-head .profile-page-team-img {
     height: 400px;
     padding: 30px;
@@ -312,7 +300,6 @@
     font-size: 1.2rem;
 }
 
-/* Kepala Lab - Nama Lebih Besar */
 .profile-page-team-head .profile-page-team-content h5 {
     font-size: 1.4rem;
     color: #667eea;
@@ -344,11 +331,9 @@
 }
 
 
-/* ============================================
-   RESPONSIVE DESIGN
-   ============================================ */
+/* RESPONSIVE DESIGN */
 
-/* Tablet */
+/* Tablet (992px and below) */
 @media (max-width: 991.98px) {
     .profile-page-vision-title,
     .profile-page-mission-title {
@@ -384,7 +369,7 @@
     }
 }
 
-/* Mobile */
+/* Mobile (768px and below) */
 @media (max-width: 767.98px) {
     .profile-page-vision-card,
     .profile-page-mission-card {
@@ -454,7 +439,7 @@
     }
 }
 
-/* Small Mobile */
+/* Small Mobile (576px and below) */
 @media (max-width: 575.98px) {
     .profile-page-vision-title,
     .profile-page-mission-title {
@@ -490,31 +475,4 @@
         width: 230px;
         height: 230px;
     }
-}
-
-
-/* ============================================
-   ANIMATION DELAYS
-   ============================================ */
-
-.wow {
-    visibility: hidden;
-}
-
-/* Custom animations for smooth entrance */
-@keyframes fadeInUpCustom {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.profile-page-team-card,
-.profile-page-vision-card,
-.profile-page-mission-card {
-    animation: fadeInUpCustom 0.6s ease-out;
 }
