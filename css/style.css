@@ -438,6 +438,43 @@
     }
 }
 
+
+/*** Features / Research Section ***/
+.section-research-publications {
+    background: linear-gradient(rgba(3, 27, 78, .3), rgba(3, 27, 78, .3)), url(../img/feature1.jpg) left center no-repeat;
+    background-size: cover;
+}
+
+.research-content-row {
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+}
+
+.research-content-item {
+    border-color: rgba(0, 0, 0, .03) !important;
+}
+
+.research-statistics-progress .progress {
+    height: 5px;
+}
+
+.research-statistics-progress .progress .progress-bar {
+    width: 0px;
+    transition: 3s;
+}
+
+.research-statistics-progress .nav-pills .nav-link {
+    color: var(--dark);
+}
+
+.research-statistics-progress .nav-pills .nav-link.active {
+    color: #FFFFFF;
+}
+
+.research-statistics-progress .tab-content hr {
+    width: 30px;
+}
+
+
 /*** About Section - Additional ***/
 .profile-fact-box {
     width: 220px;
@@ -450,6 +487,7 @@
         margin-top: -130px;
     }
 }
+
 
 /*** Team Section ***/
 .section-team-container {
