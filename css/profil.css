@@ -46,19 +46,22 @@
 
 /* VISI MISI SECTION (id="visi-misi") */
 
-/* Visi Card - Purple Gradient */
+/* --- UBAHAN 1: KARTU VISI (Sekarang Biru) --- */
 .profile-page-vision-card {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    /* Mengubah gradient ungu menjadi Biru Primary ke Biru Gelap (Sesuai Tema) */
+    background: linear-gradient(135deg, #3368C6 0%, #031B4E 100%);
     padding: 40px;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+    /* Mengubah bayangan (shadow) agar bernuansa biru, bukan ungu */
+    box-shadow: 0 10px 30px rgba(51, 104, 198, 0.3); 
     color: #fff;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .profile-page-vision-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
+    /* Shadow saat hover juga disesuaikan */
+    box-shadow: 0 15px 40px rgba(51, 104, 198, 0.4);
 }
 
 .profile-page-vision-icon {
@@ -93,7 +96,7 @@
     color: rgba(255, 255, 255, 0.95);
 }
 
-/* Misi Card - White Background */
+/* --- UBAHAN 2: KARTU MISI (Icon & Border) --- */
 .profile-page-mission-card {
     background: #fff;
     padding: 40px;
@@ -106,13 +109,15 @@
 .profile-page-mission-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-    border-color: var(--bs-primary);
+    /* Border saat hover menggunakan warna Primary (Biru) */
+    border-color: #3368C6;
 }
 
 .profile-page-mission-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    /* Mengubah background Icon Misi menjadi Biru juga */
+    background: linear-gradient(135deg, #3368C6 0%, #031B4E 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -129,7 +134,7 @@
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 20px;
-    color: #333;
+    color: #031B4E; /* Judul menggunakan warna gelap tema */
     letter-spacing: 2px;
 }
 
@@ -155,7 +160,8 @@
     position: absolute;
     left: 0;
     top: 2px;
-    color: var(--bs-primary);
+    /* Centang menggunakan warna Primary (Biru) */
+    color: #3368C6; 
     font-size: 1rem;
 }
 
