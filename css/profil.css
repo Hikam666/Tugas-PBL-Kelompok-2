@@ -329,11 +329,28 @@
     font-size: 0.9rem;
 }
 
+/* EXPERTISE DESCRIPTION - Muncul saat Hover */
 .profile-page-team-expertise {
-    font-size: 0.9rem;
-    color: #888;
+    font-size: 0.85rem;
+    color: #0d6efd;
     margin-bottom: 0;
     font-style: italic;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    margin-top: 0;
+    padding-top: 0;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.profile-page-team-card:hover .profile-page-team-expertise {
+    opacity: 1;
+    max-height: 200px;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 2px solid #e8f0fe;
 }
 
 
@@ -372,6 +389,10 @@
     .profile-page-team-head .profile-page-team-img img {
         width: 280px;
         height: 280px;
+    }
+    
+    .profile-page-team-card:hover .profile-page-team-expertise {
+        max-height: 180px;
     }
 }
 
@@ -443,6 +464,14 @@
     .profile-page-feature-box i {
         font-size: 2rem;
     }
+    
+    .profile-page-team-expertise {
+        font-size: 0.8rem;
+    }
+    
+    .profile-page-team-card:hover .profile-page-team-expertise {
+        max-height: 160px;
+    }
 }
 
 /* Small Mobile (576px and below) */
@@ -480,5 +509,13 @@
     .profile-page-team-head .profile-page-team-img img {
         width: 230px;
         height: 230px;
+    }
+    
+    .profile-page-team-expertise {
+        font-size: 0.75rem;
+    }
+    
+    .profile-page-team-card:hover .profile-page-team-expertise {
+        max-height: 140px;
     }
 }

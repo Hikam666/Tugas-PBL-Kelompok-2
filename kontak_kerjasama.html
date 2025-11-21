@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta charset="utf-8">
-    <title>Laboratorium Teknologi Data - JTI Polinema</title>
+    <title>Berita & Agenda - Laboratorium Teknologi Data JTI Polinema</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="laboratorium informatika terapan, jaringan, ai, data, polinema" name="keywords">
-    <meta content="Laboratorium Informatika Terapan JTI Polinema: fasilitas riset, publikasi, kegiatan, dan kolaborasi industri" name="description">
+    <meta content="berita laboratorium, agenda kegiatan, pengumuman" name="keywords">
+    <meta content="Berita terkini, agenda kegiatan, dan pengumuman Laboratorium Teknologi Data" name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -14,8 +14,7 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Red+Rose:wght@600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Red+Rose:wght@600;700&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -30,18 +29,20 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    
+    <!-- News Page Stylesheet -->
+    <link href="css/StyleBerita.css" rel="stylesheet">
 </head>
 
 <body>
     <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
     </div>
     <!-- Spinner End -->
 
 
-<!-- Decorative Top Bar -->
+ <!-- Decorative Top Bar -->
 <div class="top-bar-gradient d-none d-md-block"></div>
 
 <!-- Header Container -->
@@ -96,7 +97,7 @@
                         <a href="fasilitas.html" class="nav-link px-3">Fasilitas</a>
                     </li>
                     <li class="nav-item">
-                        <a href="publikasi.html" class="nav-link active px-3">Riset & Publikasi</a>
+                        <a href="publikasi.html" class="nav-link px-3">Riset & Publikasi</a>
                     </li>
                     <li class="nav-item">
                         <a href="berita.html" class="nav-link px-3">Berita & Agenda</a>
@@ -105,7 +106,7 @@
                         <a href="galeri.html" class="nav-link px-3">Galeri</a>
                     </li>
                     <li class="nav-item">
-                       <a href="kontak_kerjasama.html" class="nav-link px-3">Kontak & Kerja Sama</a>
+                        <a href="kontak_kerjasama.html" class="nav-link active px-3">Kontak & Kerja Sama</a>
                     </li>
                 </ul>
             </div>
@@ -116,140 +117,97 @@
     <!-- Page Header Start -->
     <div class="container-fluid page-header-banner py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center py-5">
-            <h1 class="display-3 text-white mb-4 animated slideInDown">Publikasi</h1>
+            <h1 class="display-3 text-white mb-4 animated slideInDown">Kontak & Kerja Sama</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb justify-content-center mb-0">
                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Publikasi</li>
+                    <li class="breadcrumb-item active" aria-current="page">Kontak & Kerja Sama</li>
                 </ol>
             </nav>
         </div>
     </div>
     <!-- Page Header End -->
 
-    <!-- ISI KONTEN -->
-    <div class="container my-5">
 
-        <h3 class="mb-3 fw-bold text-dark">Daftar Publikasi</h3>
+  <!-- Kontak & Kerja Sama / Form Start -->
+    <div class="container-fluid py-5" id="kontak">
+        <div class="container">
+            <div class="row g-5">
 
-        <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-3">
-            <div class="btn-group" role="group">
-                <button class="btn btn-primary active">Most Cited</button>
-                <button class="btn btn-outline-primary">Latest</button>
-                <button class="btn btn-outline-primary">Oldest</button>
-            </div>
-            
-            <div class="d-flex gap-2 align-items-center flex-wrap">
-                <!-- Filter Tahun -->
-                <select class="form-select" style="width: auto; min-width: 120px;">
-                    <option value="">Semua Tahun</option>
-                    <option value="2024">2024</option>
-                    <option value="2023">2023</option>
-                    <option value="2022">2022</option>
-                    <option value="2021">2021</option>
-                    <option value="2020">2020</option>
-                    <option value="2019">2019</option>
-                </select>
-                
-                <!-- Search Box -->
-                <div class="input-group" style="width: auto; min-width: 250px;">
-                    <input type="text" class="form-control" placeholder="Cari publikasi...">
-                    <button class="btn btn-outline-secondary" type="button">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="display-6 mb-4">Kontak & Kerja Sama</h1>
+                    <p>
+                        Ingin mengajukan kolaborasi riset, undangan pelatihan, magang industri,
+                        atau membutuhkan dukungan teknis lab? Hubungi kami.
+                    </p>
 
-        <div class="row gy-4">
-            <!-- Card 1 -->
-            <div class="col-md-6 col-lg-3">
-                <div class="card border-0 shadow-sm h-100">
-                    <div class="card-header bg-warning text-dark fw-semibold">Most Cited</div>
-                    <div class="card-body">
-                        <h6 class="fw-bold">Sistem Prediksi Penjualan Frozen Food dengan Metode Monte Carlo (Studi Kasus: Supermama Frozen Food)</h6>
-                        <p class="mb-2 text-secondary">2022</p>
-                        <span class="badge bg-light text-dark border">29 citations</span>
+                    <div class="d-flex align-items-start wow fadeIn" data-wow-delay="0.3s">
+                        <div class="icon-box-primary">
+                            <i class="bi bi-geo-alt text-dark fs-1"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h5>Alamat Laboratorium</h5>
+                            <span>Gedung Jurusan Teknologi Informasi — Lantai 8 Barat</span>
+                        </div>
                     </div>
-                    <div class="card-footer bg-transparent">
-                        <a href="#" class="btn btn-outline-primary w-100">Baca</a>
+                    <hr>
+                    <div class="d-flex align-items-start wow fadeIn" data-wow-delay="0.4s">
+                        <div class="icon-box-primary">
+                            <i class="bi bi-clock text-dark fs-1"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h5>Jam Operasional</h5>
+                            <span>Senin—Jumat 08.00—16.00</span>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Card 2 -->
-            <div class="col-md-6 col-lg-3">
-                <div class="card border-0 shadow-sm h-100">
-                    <div class="card-body">
-                        <h6 class="fw-bold">Web application implementation of Android programming learning assistance system and its evaluations</h6>
-                        <p class="mb-2 text-secondary">2021</p>
-                        <span class="badge bg-light text-dark border">25 citations</span>
-                    </div>
-                    <div class="card-footer bg-transparent">
-                        <a href="#" class="btn btn-outline-primary w-100">Baca</a>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <h2 class="mb-4">Form Pertanyaan / Permintaan Kerja Sama</h2>
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="name" placeholder="Nama Anda">
+                                <label for="name">Nama Anda</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="mail" placeholder="Email Institusi">
+                                <label for="mail">Email Institusi</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-floating">
+                                <select class="form-select" id="service">
+                                    <option selected>Kolaborasi Riset</option>
+                                    <option value="">Magang / Kunjungan Industri</option>
+                                    <option value="">Permintaan Narasumber / Pelatihan</option>
+                                    <option value="">Konsultasi Teknis</option>
+                                </select>
+                                <label for="service">Keperluan</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Tuliskan pesan Anda" id="message"
+                                    style="height: 130px"></textarea>
+                                <label for="message">Pesan</label>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button class="btn btn-primary w-100 py-3" type="submit">Kirim</button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Card 3 -->
-            <div class="col-md-6 col-lg-3">
-                <div class="card border-0 shadow-sm h-100">
-                    <div class="card-body">
-                        <h6 class="fw-bold">Pengembangan Sistem Pakar Untuk Diagnosa Penyakit Kulit Pada Manusia Menggunakan Metode Naive Bayes</h6>
-                        <p class="mb-2 text-secondary">2019</p>
-                        <span class="badge bg-light text-dark border">19 citations</span>
-                    </div>
-                    <div class="card-footer bg-transparent">
-                        <a href="#" class="btn btn-outline-primary w-100">Baca</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="col-md-6 col-lg-3">
-                <div class="card border-0 shadow-sm h-100">
-                    <div class="card-body">
-                        <h6 class="fw-bold">Implementasi metode K-Means, DBSCAN, dan MeanShift untuk analisis jenis ancaman jaringan pada intrusion detection system</h6>
-                        <p class="mb-2 text-secondary">2022</p>
-                        <span class="badge bg-light text-dark border">16 citations</span>
-                    </div>
-                    <div class="card-footer bg-transparent">
-                        <a href="#" class="btn btn-outline-primary w-100">Baca</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
     </div>
-
-     <!-- Pagination -->
-            <div class="row mt-5">
-                <div class="col-12">
-                    <nav aria-label="News pagination">
-                        <ul class="pagination justify-content-center">
-                            <li class="page-item disabled">
-                                <a class="page-link" href="#" tabindex="-1">
-                                    <i class="bi bi-chevron-left"></i>
-                                </a>
-                            </li>
-                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#">
-                                    <i class="bi bi-chevron-right"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    
-
-    <!-- Footer Start -->
+    <!-- Kontak End -->
+     
+   
+        <!-- Footer Start -->
     <div class="container-fluid footer-main-section position-relative bg-dark text-white-50 py-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container">
             <div class="row g-5 py-5">
@@ -326,5 +284,5 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-</body>
+
 </html>
